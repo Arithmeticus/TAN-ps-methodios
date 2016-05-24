@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../TAN-1-dev/schemas/TAN-T.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../TAN-1-dev/schemas/TAN-T.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--<?xml-model href="http://textalign.net/release/1/dev/schemas/TAN-T.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://textalign.net/release/1/dev/schemas/TAN-T.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TAN-T xmlns="tag:textalign.net,2015:ns" TAN-version="1"
+   id="tag:kalvesmaki.com,2014:methodios-apoc:lat:1998">
+   <head>
+      <name>Aerts and Kortekaas's Latin edition of the Apocalypse of pseudo-Methodios</name>
+      <rights-excluding-sources which="by-sa_4.0" rights-holder="kalvesmaki"/>
+      <source>
+         <IRI>http://id.lib.harvard.edu/aleph/007886991/catalog</IRI>
+         <IRI>https://lccn.loc.gov/98225073</IRI>
+         <name>Pseudo-Methodius. Apokalypsis. Greek (Hellenistic Greek) and Latin Die Apokalypse des
+            Pseudo-Methodius : die ältesten griechischen und lateinischen Übersetzungen /
+            herausgegeben von W.J. Aerts und G.A.A. Kortekaas. Lovanii : Peeters, 1998.</name>
+      </source>
+      <declarations>
+         <work>
+            <IRI>http://dbpedia.org/resource/Apocalypse_of_Pseudo-Methodius</IRI>
+            <name>The Apocalypse, written by pseudo-Methodius</name>
+         </work>
+         <div-type xml:id="sec" which="section"/>
+         <div-type xml:id="ch" which="chapter"/>
+         <div-type xml:id="title" which="title"/>
+         <div-type xml:id="exp" which="explicit"/>
+         <filter>
+            <normalization>
+               <IRI>urn:uuid:c5c9fa74-a8e8-4d07-8e26-5e042839ccda</IRI>
+               <name>Removed editorial angle brackets and parentheses</name>
+            </normalization>
+            <normalization which="no hyphens"/>
+         </filter>
+      </declarations>
+      <agent xml:id="kalvesmaki" roles="transcriber editor">
+         <IRI>http://viaf.org/viaf/299582703</IRI>
+         <IRI>tag:kalvesmaki.com,2014:self</IRI>
+         <IRI>tag:kalvesmaki@gmail.com,2014:self</IRI>
+         <name xml:lang="eng">Joel Kalvesmaki</name>
+      </agent>
+      <role xml:id="editor">
+         <IRI>http://schema.org/editor</IRI>
+         <name>editor</name>
+      </role>
+      <role xml:id="transcriber">
+         <IRI>http://rdvocab.info/roles/transcriber</IRI>
+         <name>transcriber</name>
+      </role>
+      <change when="2016-04-06" who="kalvesmaki">Started TAN file</change>
+   </head>
+   <body xml:lang="lat" ed-when="2016-04-05-04:00" ed-who="kalvesmaki">
+      <div n="title" type="title">INCIPIT SANCTI METHODII EPISCOPI PATERENSIS SERMO DE REGNUM
+         GENTIVM ET IN NOVISSIMIS TEMPORIBVS CERTA DEMONSTRATIO.</div>
+      <div n="1" type="ch">
+         <div n="1" type="sec">Sciendum namque est, quomodo exeuntes Adam quidem et Eva de paradyso
+            virgines fuisse. In anno autem xxxmo expulsionis eorum de paradyso genuerunt Cain
+            primogenitum et sororem eius Calmanan et post xxxmo alium annum pepererunt Abel cum
+            sororem eius Debboran.</div>
+         <div n="2" type="sec">Anno autem treginsimo et centisimo vitae Adae occidit Cain fratrem
+            suum Abel et fecerunt planctum super eum Adam quoque et Eva in annis C. ccmo autem et
+            xxxmo anno primi miliari, quod est primum seculum, natus est Sedh vir gigans in
+            similitudinem Adae. Quingentisimo vero anno in eadem primi chiliadem fili Cain
+            abutebantur uxores fratrum suorum in fornicationibus nimis.</div>
+         <div n="3" type="sec">...Sexscentesimo autem anno ipsius primi miliarii stuprum amoris
+            fornicationis istorum mulieres conlapse sunt vel defusae et in vesaniam versi sunt: nam
+            suis viris tamquam mulieribus supergressae utebantur, et facti sunt viri, darius ut
+            dicam, confusio videntibus et in fornicationem suam inverecundae apparentibus.</div>
+         <div n="4" type="sec">DCCCmo autem anno vitae Adae dilatatum est super terram fornicationis
+            inmunditiam a filiis fratricidae Cain.</div>
+         <div n="5" type="sec">Mortuos est autem Adam anno DCCCC et XXX vitae suae in primo
+            miliario. Et tunc disiuncti sunt ab invicem, hoc est generatio Seth a cognatione Cain.
+            Et abstulit Seth suam cognationem sursum in quendam montem, proximos paradyso qui erat.
+            Habita- 5 bant quoque Cain et huius cognatio in campo, in quo et nefandum fratris
+            homicidium perpetravit. XL vero anno temporis Iared pertransivit primum miliarium seu
+            prima generatio.</div>
+      </div>
+      <div n="2" type="ch">
+         <div n="1" type="sec">Anno autem CCCXL Jared secundo miliaria surrexerunt vm malae artis,
+            inventores iniqui et omni nefariae pleni, ex filiis Cain, id est Iobeth et Tholucel,
+            filii Lamech, qui fuit caecus, qui et Cain interfecit. Quos et dominatus 'diabulos
+            convertit eos post omnem speciem musicam conponendi.</div>
+         <div n="2" type="sec">Anno autem D secundi miliarii .adhuc etiam maius exarserunt in
+            obscinissimam fomicationem omnes homines in castris Cain, peius facti priori
+            generationis. Qui et in more animalium in alterutrum convenientes insurgebant, et quidem
+            in virilem muliebrem sexum.... Similiter isdem turpissimis et incestis actibus hi, qui
+            erant de cognatione Cain, utebantur.</div>
+         <div n="3" type="sec">DCC autem tempore Iared vitae suae anno, quod est in secunda
+            chiliadam, apposuit malignus et infestus diabulos bellum fomicationis adiungere filiis
+            Seth, ut concupiscerent filias Cain et proiciens apparuerunt gigantes super terra de
+            Seth, qui in peccati foveam conlapsi atrocissimi facti sunt. Et iratus dominus Deus in
+            explicionem secundi milarii factum est dilluvio aquarum et omnes creatura prima deleta
+            est vel absorta. Deperiit generatio primi hominis figmenti.</div>
+      </div>
+      <div n="3" type="ch">
+         <div n="1" type="sec">Et DCXII anno vitae Noe, iam in...trium milium annorum, postquam
+            exivit Noe de area, aedificaverunt filii Noe novam possessionem in exteriora tena et
+            appellaverunt nomen regionis illius Thamnon secundum noncupationem numeri, qui exierunt
+            de archa, id est VIII.</div>
+         <div n="2" type="sec">C autem anno de terciam chiliadam natus est Noe filius secundum
+            ipsius similitudinem et vocavit nomen eius Ionitum. CCC vero tempore de trium milium
+            annorum dedit Noe donationes filio suo Ionito et demisit eum in terram Eoam.</div>
+         <div n="3" type="sec">Et post obitum Noe DCXC anno in eosdem trium milium annarum
+            ascenderunt filii Noe de terra ȩoam et aedificaverunt sibi turrem in terra Sennahar. Et
+            illuc divisi sunt linguae; et dispersae sunt super faciem totius terrae.</div>
+         <div n="4" type="sec">Ionetus autem, filius Noe, introivit in Eoam usque ad mare, qui
+            vocatur »Hiliu Chora«, id est »Regio Solis«, in quo solis ortum fit, et habitavit
+            ibidem.</div>
+         <div n="5" type="sec">Hie Ionitus accipit a Deo donum sapientiae, qui non solum hoc tantum,
+            sed et omnem astronomiae articulum factusque inventor. Ad hunc discendens Nebroth, qui
+            fuit gigans, et eruditus ab eo accipit ab illo consiliom, in quibus regnare coepisset.
+            Hic autem Nebroth ex filiis discendebat hiroum; qui fuit filius Sem et ipse primus
+            regnavit super terram.</div>
+         <div n="6" type="sec">DCC vero et XC anno terciae chiliadae, quod agebatur trium milium
+            annorum, aedificata est Babillon rri.agnam et regnavit in ea Nebroth. Et post haec
+            faecerunt sibi filii Cham regem ex ipsis, cui nomen est Pontipus. Et iam DCCXC et nono
+            anno temporis trium s millium annorum, anno tertio regni Nebroth, miserunt viros
+            potentes ex filiis lapheth, sapientes et artifices et arte tectonicam constructores, et
+            discenderunt in Eoam terram ad Ionitum, filium Noe, et aedificaverunt ei civitatem, quam
+            nuncupaverunt Ionitum iuxta nominis illius noncupationem. </div>
+         <div n="7" type="sec">Et pax multa erat in regno loniti et Nebroth usque in praesentem
+            diem. In regno autem Nebroth, filii Sem, et Pontipum, filii Cham, non erat pax. In
+            diebus enim Nebroth filii Cham et Iapheth contra invicem rebellabant.</div>
+         <div n="8" type="sec">Scripsit ergo Ionitus epistolam ad Nebroth ita quia »Regnum filiorum
+            Iaphedi, hie incipiet delere regnum filiorum Cham«. Haec autem regna primo apparuerunt
+            in terra et post haec dedicerunt omnes gentes constituere sibi regnum.</div>
+      </div>
+      <div n="4" type="ch">
+         <div n="1" type="sec">Post regnum igitur Nebri, expletam iam tertiam chiliadam t
+            annorum...anno VIIIt quartae chiliadis, semper pugnabant ad invicem utrumque regna. Et
+            divictum est regnum Aegyptiorum a regno Nebroth. Et optinuit potentatum regnum
+            Babillonis in semine Nebroth usque ad Chuzimisdem. Hie accipit sibi uxorem de filiis
+            Cham.</div>
+         <div n="2" type="sec">Defuncto autem Chuzimisdem sumpsit Ezdem, huius nepus, matrem eius in
+            uxorem et genuit ei Eresdem. Hie congregavit sibi virtutes multas et surrexit adversus
+            regnum filiorum Cham et captibavit et congremavit igni omnes regiones, quae erant ab
+            Occidente.</div>
+         <div n="3" type="sec">In secundo anno regni Chosdri, filii Eresdim, congregati sunt autem
+            filii Cham et discenderunt in terra Eoam, ut praeliarent cum regem Chosdron. Fuerunt
+            autem trecenta et viginti milia peditum, virgas solummodo manibus contenti.</div>
+         <div n="4" type="sec">Audiens autem de his Chosdro subrisit et dimisit eos, usque dum
+            transissent fluminem Tigrem. Et illuc mittens contra eos exercitum suum super elephantos
+            ascendentes, omnes eos interfecit, et non est relictus ex eis quisquam. Et amplius non
+            adposuerunt filii Cham, ut pugnarent cum eis. Et ex tunc inamaricatae sunt regna contra
+            invicem.</div>
+      </div>
+      <div n="5" type="ch">
+         <div n="1" type="sec">Et in fine quattuor milium annorum, sive in XXV adhuc
+            temporis...chiliades, discendit Sampsisahib de Eoam, qui fuit de cognatione Ioniti,
+            filii Noe, et depopulatus est ab Eufraten usque ad Edroigan, id est LXVII civitates et
+            regionis earum.</div>
+         <div n="2" type="sec">Et pertransiYit in tribus regnis Indorum et incendit et desolaYit. Et
+            exiit in desertum Saba et concidit castra filiorum Ismahel, filii Agar Aegyptiae,
+            ancillae Sarrae, uxoris Abrahae. Et expulsi sunt omnes et fugierunt de solitudinem
+            Ethribum et introierunt in terra inhabitabilem et pugnaYerunt cum reges gentium. Et
+            depopulati sunt et captiYaYerunt et dominati sunt regna gentium, quae erant in te1Ta
+            promissionis.</div>
+         <div n="3" type="sec">Et repleta est ex eis et de castra illorum. Erant autem quasi
+            locustae et incidebant nudo corpore et edebant carnes camellorum conposite in utribus et
+            bibebant sanguinem iumentorum in lacte mixto.</div>
+         <div n="4" type="sec">Cumque igitur obtenuissent filii Ismael universam terram et
+            desolassent urbes et regiones eorum et dominassent in omnibus insolis, tunc illoque
+            tempore construxerunt sibi navigia et in modum volucrum his utentibus advolabant super
+            aquas maris. Ascenderunt igitur et in regionibus Occidentis usque ad magnam Romam et
+            Illyrico et Gigitum et Thesalonica et Sardiniae magnae, quae est trans illa Romam. Et
+            dominati sunt terrae in annis LX et fecerunt in ea, quecumque voluerunt.</div>
+         <div n="5" type="sec">Post vero ebdomatas octo et dimidiam eorum potentatus, per quod
+            obtinuerunt universarum regnum gentium, superexaltatum est cor eorum, dum se viderent
+            obtenuisse et dominasse omnia.</div>
+         <div n="6" type="sec">In tempore autem illo facti sunt eis tyrranni, principes militiae
+            quattuor, qui fuerunt filii Umeae, quae ab eis sic vocabatur, quorum nomina sunt haec:
+            Oreb et Zeb et Zebee et Salmana. Hi pugnaverunt cum lsrahelitae et, quem ad modum fecit
+            eis Deus redemptionem de manu Aegyptiorum per Moysen famulum suum, eodem vero modo etiam
+            tunc illo tempore operatus est cum eis misericordiam et redemit eos ex eis per Gedeon.
+            Et liberatus est de servitute filiorum Ismahel.</div>
+         <div n="7" type="sec">Hie enim Gedeon concidit castra eorum et persequens eiecit eos de
+            terra inhabitabilem in solitudinem Ethribum, de qua et prodierant.</div>
+         <div n="8" type="sec">Et qui relicti sunt, dederunt federa pacis filiis Israhel. Et
+            exierunt in desertum exteriorem novem tribus. Futuri sunt autem, ut exeant aliud semel
+            et distitutam faciant terram et obtinere orbem tenae et regionis in introitu pacis a
+            terra Aegypti usque Aethiopia et ab Euphraten usque Indias eta Tigren usque ad introitum
+            Naod regni Ioniti, filii Noe, et ab aquilone usque Romam et Ilirico et Gigitu et
+            Thesalonicam et Olbaniae et usque ad mare, quae Ponto mittit. Et erit iugum eorum duplex
+            super cervices omnium gentium.</div>
+         <div n="9" type="sec">Et non erit gens aut regnum sub caelo, qui possint eos expugnare
+            usque ad numerum temporum ebdomadarum VII. Et post haec devincuntur a regno caelesti et
+            Romanorum, etiam subiciuntur ei. Etenim hoc regnum magnificabitur, id est Romanorum,
+            super omnia regna gentium et nequaquam delibitur a nullo eorum in aetemum. Habent enim
+            arma inexpugnabilem, per quem omnes deiciuntur adversarii eius.</div>
+      </div>
+      <div n="6" type="ch">
+         <div n="1" type="sec">Abhinc igitur considerate a circumgyrantium temporum regnantium, et
+            haec est veritas rerum, que se ipsa darius ostendit, absque ullo errorem caligines vel
+            aliquam seductionem.</div>
+         <div n="2" type="sec">A Nebroth enim, qui fuit irous, usque ad Perrusdec regna gigantum
+            obtenuit terra Babyllonia. Et a Perusdec usque ad Ses seniores, qui fuit de Hidruhigam,
+            regnabant Persi. Et a Ses usque ad Perusdech regnaverunt de Lee et a Phun. Et a Perusdec
+            usque 5 ad Seneribec et Babylloniae regnabant.</div>
+         <div n="3" type="sec">Et accepit Seneribec uxorem Iecnad de Ararat. Et peperit ei
+            Ardemelech et Tzaratzar. Et hi interfecerunt patrem suum et fugierunt in terra
+            Ararat.</div>
+         <div n="4" type="sec">Et regnavit illuc Saradon in Babyllonem pro patre suo Seneribech, et
+            Nabucchodonossor, qui erat ex patre Luzia et ex matre reginae Saba.</div>
+         <div n="5" type="sec">Cumque igitur introisset Seneribech ad pugnandum cum rege Indiae et
+            exisset usque Saba et dissolasset quamplurimas regiones, convenit cum eo exisse
+            Nabuchodonossor, illo vidilicet educens eum simulque secum, et constituit eum principem
+            militiae 5 suae. Et propter sapientiam, que in illo erat, et potentiam datum est ei
+            regnum Babylloniae.</div>
+         <div n="6" type="sec">Et sumpsit sibi uxorem de Medis, nomine Erusdem. Et post obitum
+            Nabocchodonossor et Baltasar, filii eius, regnavit Darius Medus, nepus Erusdum. Darius
+            autem duxit uxorem Dorun, Persissa genere, de qua natus est Chores Persus.</div>
+      </div>
+      <div n="7" type="ch">
+         <div n="1" type="sec">Audi nunc igitur, quomodo conmixti sunt hi reges cum invicem sibi, et
+            hi quidem Babyllonis Mediis et Persis vero cum Medis. Et obtenuit et potentior factum
+            est regnum Babyllonis quam Aethiopiae et Saba et omnium regum gentium a mare usque ad
+            Euphra- ten flumine. Adhuc autem et Daviticum regnum per Nabuchodonossor devinctum est,
+            etiam et Arabeorum et Aegyptorum.</div>
+         <div n="2" type="sec">Darius ergo Medus supergressus est regnum Indorum et Aethiopum.
+            Chores autem Persus obtenuit Thraciam et redimet filios Israhel et misit in terra
+            promissionis praecipiens eis aedificare templum Dei, quod distructum erat ab
+            Nabuchodonossor. Et propter hoc factum est secundum imperium Chores regis.</div>
+      </div>
+      <div n="8" type="ch">
+         <div n="1" type="sec">Audi igitur nunc certisseme, quomodo quatuor haec regna convinerunt
+            sibi: Aethiopes enim Macedonis et Romanis Greci. Haec sunt quattuor venti...cummoventes
+            mare magnum.</div>
+         <div n="2" type="sec">Philippus namque pater Alexandri quidem Macedon fuit et accepit in
+            coniugium Cuseth, filia regis Phol Aethiopiae, de qua hie natus est Alexander, Gregorum
+            tyrrannus factus.</div>
+         <div n="3" type="sec">Hie condedit Alexandriam magnam et regnavit in ea annis XVIIII. Iste
+            discendens in Eoam occidit Darium Medorum et dominatus est multarum regionum et
+            civitatum et demultavit terram et discendit usque ad mare, qui vocatur 'Regio Solis',
+            ubi conspexit gentes inmundas et aspectu onibilis.</div>
+         <div n="4" type="sec">Sunt autem ex filiis Iapeth nepotes, quorum inmunditiam videos
+            exorruit. Commedebant enim hi omnes cantharo speciem omnem coinquinabilem vel
+            spurcebilem, id est canes, mures, serpentes, morticinorum cames, aborticia, informabilia
+            corpora et ea, que in alvo necdum † per leniamenta † coaculata sunt vel ex aliqua parte
+            † membrorum producta conpago † formam figmenti possit perficere vultum vel figuram
+            expremere et haec iumentorum, necnon etiam et omne speciem ferarum inmundarum. Mortuos
+            autem nequaquam sepeliunt, sed sepe commedent eos. </div>
+         <div n="5" type="sec">Haec vero universa contemplatus Alexander ab eis inmunditer et
+            sceleriter fieri, timens ne quando eant exilientes in terra sancta et illa contaminent a
+            pollutis suis iniquissimis afectationibus, depraecatus est Deum inpensius. Et
+            praecipiens congregavit eos omnes mulieresque eorum et filius et omnia scilicet castra
+            illorum.</div>
+         <div n="6" type="sec">Et eduxit eos de terra orientale et conclusit minans eos, donee
+            introissent in finibus Aquilonis. Et non est introitus nee exitus ab Orientem usque in
+            Occidentem, quis per quod quis possit ad eos transire vel introire.</div>
+         <div n="7" type="sec">Continuo ergo supplicatus est Deum Alexander, et exaudivit eius
+            obsecrationem et praecipit Dominus Deus duobus montibus, qui bus est vocabulum 'Ubera
+            Aquilonis', et adiuncti proximaverunt invicem usque ad duodecim cubitorum.</div>
+         <div n="8" type="sec">Et construxit portas aereas et superinduxit eas asincitum, ut, si
+            voluerint eas patefacere in ferro, non possunt aut dissolvere per igne nee valeant
+            utrumque, sed statim ignis omnis extinguitur. Talis enim est natura asinciti, quia neque
+            ferro confringitur ictus ferientes neque igne suscipit resolutionem. Universas enim
+            adinventiones daemonum et caliditates mortiferas vel supervaguas operantur.</div>
+         <div n="9" type="sec">Haec obscinissime et deforme vel sordidae gentes cuncta [que] magicae
+            artis malorum abutuntur inmunditer. Etiam in his illorum sordidam et inhumanam, magis
+            autem, ut conpetenter dicitur, Deo odibilem distructa est maleficia, ita ut non possint
+            neque ferro neque per igne vel quodcumque libet aliud astuciam easdem reserare vel
+            aperire portas et fugire. </div>
+         <div n="10" type="sec">In novtsstmts vero temporibus secundum Ezechielis prophetiam, que
+            dicit: 'In novissimo die consumrnationes mundi exiet Gog et Magog in terra Israel,' qui
+            sunt gentes et reges, quos retrusit Alexander in finibus Aquilonis? Gog et Magog et Anog
+            et s Ageg et Achennaz et Dephar et Putin~i et Libii et Eunii et Pharizei et Declemi et
+            Zarmathae et Theblei et Zarmatiani et Chachonii et Amazarth~ et Agrimardii et Anuphagii,
+            qui dicuntur Cynocephali, et Tharbei et Alanes et Physolonicii et Arcnei et Asalturii.
+            Hi viginti duo reges consistunt reclusi intrinsecus portarum, quas confixit
+            Alexander.</div>
+      </div>
+      <div n="9" type="ch">
+         <div n="1" type="sec">Defuncto igitur namque Alexandra, primus rex Gregorum, regnaverunt
+            pro eo quattuor pueri eius: non enim coniunctus est matrimonio aliquando. Chuseth vero
+            mater eius regressa est in propriam patriam Aethyopiam.</div>
+         <div n="2" type="sec">Byzas igitur, qui Byzantium condedit, misit per mare ad Phol, regem
+            Aethiopiae, Germanicum, sui exercitus principem, et pacificavit cum eo, scribens ei de
+            Chuseth, matrem Alexandri, qualiter earn sibi accipiat in uxorem et regnificet
+            earn.</div>
+         <div n="3" type="sec">Suscipiens ergo Phol rex litteras a Germanico et videos, que
+            detulerat largissima dona, et accipiens nimis laetatus est. Surrexit igitur et ipse et
+            congregans ex omnibus speciorum Aethiopiae sumensque pariter et filiam suam Chuseth
+            profectus est in Byzantium abens secum XXX milia Aethiopum in comitatu. Et susceptus est
+            a Byzas protinus foras trans mare in Calcidonum cum multa nimiaque alacritate animi.
+            Dedit autem et dona cupiosa valde his, qui cum eo fuerant. Et introivit Phol in Byzantem
+            et dedit munera magna et dona maxima secundum regalem magnani- mitatem.</div>
+         <div n="4" type="sec">Et accipit rex Byzas Chuseth, filiam Phol regis Aethiopiae, ex qua ei
+            nata est filia, quam et nuncupavit in nomine civitates Byzanteam, quam et nuptus est
+            Romyllus, qui et Armaleus, rex Romae. Propter nimiam autem pulchritudinem eius dilexit
+            earn valde. Erat quippe et ipse nimis simplex et magnanimus, unde et in dotalibus eius,
+            ut sunt matrimonialia, donavit ei Romam. Audientes autem optimatis eius indignati sunt
+            contra eum.</div>
+         <div n="5" type="sec">Peperit vero ei Bizantea filios tres, quos et nuncupavit,
+            primogenitum quidem secundum appellationem patris Armaleum, secundum autem Urbanum,
+            tertium denominavit Claudium.</div>
+         <div n="6" type="sec">Regnaverunt igitur uterque, et quidem Armaleus in Romam pro patri suo
+            Armaleo, Urbanus vero in Byzam civitatem matris suae, Claudius autem in
+            Alexandria.</div>
+         <div n="7" type="sec">Optinuit igitur semen Chuseth, filiae Phol regis Aethiopiae,
+            Macedonumque et Romanorum...ex semine Aethiopum. Haec »praeveniet manus eius Deo« in
+            novissimo die secundum propheticam expositionem. Providens autem beatus David
+            spiritalibus oculis et praenoscens, quomodo Chuseth, filia Phol regis Aethiopiae,
+            incipiet exsuscitare regnum Romanorum, praefatus est dicens: » Aethiopia praeveniet
+            manus eius Deo. « Qui dam igitur consideraverunt, quia propter Aethiopum regnum
+            conpulsus beatus David haec locutus est, sed mentiti sunt veritate, qui haec ita
+            existimant,</div>
+         <div n="8" type="sec">siquidem etenim ex semine Aethiopissy constituto regno hoc
+            constructum est magnum et venerabilem lignum sanctae et honorificum et vivificatoriae
+            crucis, quod in medio terrae confixum est: unde fortassis, ut conpetet, ipse effatus est
+            antiquus pater David, ita pronuntians: »Aethiopia praeveniet manus eius Deo«. Non est
+            enim gens aut regnum sub caelo, quae praevalere possunt superare regnum
+            christianorum,</div>
+         <div n="9" type="sec">—sicuti iam enim praefati locuti sumus superius-, quod in media
+            terrae vivificans confixa et solidata est crux, a quo et orbis terrae fines valde
+            sapienterque discribuntur constare secundum latitudo quoque et longitudo et altitudo vel
+            profundum. Qualisve possit vel 5 quis poterit virtutem superare umquam sanctae crucis
+            adpraehendere potentiam? Sic enim obtinet venerationem Romani imperii dignitas, pollens
+            per eum, qui in ea pependit, dominum nostrum Iesum Christum.</div>
+      </div>
+      <div n="10" type="ch">
+         <div n="1" type="sec">Audiamus igitur, quid praedicatur divinorum Paulus edocuit
+            significans de novissimo diae et Romanorum regnum. In quibusdam enim secundam ad
+            Thesalonicensis epistolam ita inquid: » Rogamus itaque vos, fratres, per adventum Domini
+            nostri Iesu Christi et vestro conventui in id ipsum, ut non cito moveamini a sensa
+            vestro neque terreamini neque per spiritum neque per verbum neque per epistolam tamquam
+            per nos missa, quasi instet adventus Domini; ne quis vas seducat ullumodo, quia nisi
+            vinerit discessio primum et revelatus fuerit homo iniquitatis, filius qui est
+            perditiones, qui est adversarios et extollens se super omnem quod dicitur Deum aut quod
+            colitur, ita ut in templo Dei sedeat ostendens se, quasi sit Deus,« et post posillum:
+            »Solumodo nunc,« inquid, »qui tenet, teneat, donee e medio fiat, et tunc revelabitur
+            iniquus«.</div>
+         <div n="2" type="sec">Quis igitur est »e medio, « nisi Romanorum imperium? Omnes enim
+            principatus et potestas huius mundi distruetur absque hunc.</div>
+         <div n="3" type="sec">Namque hie oppugnatur et non superabitur, et omnes gentes, qui cum eo
+            confligunt, conterentur vel consumentur ab eo. Et obtenebit, donee ultima bora
+            perveniet, et haec »preveniet manus eius Deo«, etiam secundum apostolum dicentem:
+            »cumque distruetur omnes principatus et potestas universa et ipse Filius tradederit
+            regnum Deo et Patri«. Qual em regnum? Scilicet Christianarum.</div>
+         <div n="4" type="sec">Ubi enim umquam erit vel fuit aut est regnum sive alia potentia, que
+            super hunc emineat? Si volueris enim mihi, quod certum est, pertractare, accipe, quaeso
+            te, mihi Mosaicam plebemque tantis signis et portentis et in profundum maris etiam
+            Aegyptius excucientem. Vide mihi et Iesum Nave, sub quem etiam sol circa Gabaon stetit
+            et luna circa vallem Hiericho. Et alia quam pluriora et stupenda Deo miracula fiunt et,
+            ut verius † clare quod † dicam, omnem Hebreorum considera fortitudinem, quomodo sub
+            Romanorum imperio deleta et contrita est. Titus igitur et Vespasianus conciserunt
+            universus. Numquid templum in aratro expugnans Adrianus non aravit? Quis ergo igitur
+            fuit vel erit secundum hunc aliud regnum? Sed nullum vidilicet invinimus, si pro veri
+            tate curam geramus. </div>
+         <div n="5" type="sec">Nonne mille anni regnaverunt He brei? Et abscisum est regnum eorum!
+            Aegyptii autem trium milium annorum, et ipse nihilhominus ita perierunt. Babyllonitae
+            quattuor milium regnant annorum, sed et ipse similiter abscidentur. Concisione igitur
+            Macedoniorum regnum (sive Aegyptiorum) conflixerunt armis adversus regnum Romanorum seu
+            barbarorum regnum, id est Turcorum, et Abares, qui simul universi absorti ab eo
+            sunt.</div>
+         <div n="6" type="sec">Itaque postquam absortum fuerit regnum Persarum, consurgent pro illis
+            adversus Romanorum imperium filii Hismahel, filii Agar, quos scriptura commemorans
+            'australem brachium' appellavit, Danihel quoque hoc praedicens. Et contradicunt regno
+            Romanorum in numero circumeuntium temporum, septimo ipso tempore annorum, id est in
+            septemilium annorum mundi, eo quod adpropinquavit consumatio saeculi et non erit
+            longitudo temporum amplius.</div>
+      </div>
+      <div n="11" type="ch">
+         <div n="1" type="sec">In novissimum enim miliarium, seu septimo tunc agentem, in ipso
+            eradicabitur regnum Persarum. Et in ipso septimo miliaria incipient exire semin Ismahel
+            de deserto Ethribum et, cum exierint, congregabuntur unanimes in magnam Gabaot.</div>
+         <div n="2" type="sec">Et illic conplebitur, quod dictum est per Ezechielem prophetam: »Fili
+            hominis«, inquid, »voca bestias agri et volatilia caeli et exhortare illa, dicens:
+            »Congregamini et venite eo quod sacrificium magnum immolo vobis. Manducate cames fortium
+            et bibite 5 sanguinem excelsorum «.</div>
+         <div n="3" type="sec">In hac itaque Gabaoth cadent in ore gladii...a semine Ismaheles, qui
+            appelatus est 'onager', eo quod in ira et furore mittuntur super faciem totius terrae,
+            super homines quoque et iumenta et bestias silve et super omnem saltum et plantiriam et
+            super omnem 5 nemorum et in omnem speciem fructiferam.</div>
+         <div n="4" type="sec">Et erit adventus eorum castigatio sine misericordia et praehibunt eis
+            super terra quattuor iste plage, id est: interitus et perditio, corruptio quoque et
+            desolatio.</div>
+         <div n="5" type="sec">Dicit enim Deus ad Israel per Moysen: »Non quia diligit vos dominus
+            Deus, introducit vos in terram promissiones, ut hereditemini earn, sed propter peccata
+            inhabitantium in earn«. Sic etenim filios Ismahel, non quod eos diligat dominus Deus,
+            dabit eis potentiam hanc, ut obteneant terram christianorum, sed propter peccatum et
+            iniquitatem, quae ab eis committitur. Similia eis non sunt facta, sed neque fiunt in
+            omnebus generationibus. </div>
+         <div n="6" type="sec">Namque igitur induentur viri adulterinis muliercolis et meretricum
+            indumenta et quemadmodum muliercolas semetipsos exomabant stantes in plateis et in
+            foribus civitatum palam omnibus et »inmutaverunt naturalem usum in eum, qui est contra
+            natura«, 5 sicuti beatus quoque et sacratissimus apostolus inquid. Similiter et mulieres
+            haec, quod et viri, agentes.</div>
+         <div n="7" type="sec">Convenerunt itaque uni muliere pater simul et filius illius et frater
+            et universi, qui cognatione adiunti videntur. Ignorabantur enim a meretricibus. Propter
+            quod sapientissimus Paulus ante temporum seriem fortassis exclamans ait: »Propter hoc
+            enim«, inquit, »tradedit illos Deus in passiones ignominiae, nam faeminae eorum
+            conmutaverunt naturalem usum in eum usum, qui est extra naturam, similiter vero et
+            masculi eorum demittentes naturalem usum faeminae exarserunt in desideriis suis in
+            invicem, masculi in masculos turpitudinem operantes et retributionem mercidis erroris
+            sui in semetipsos recipientes «.</div>
+         <div n="8" type="sec">Propter hoc igitur tradentur a Deo in manus barbarorum, a quibus
+            cadent in omni inmunditiam et fetorem pollutionis, et contaminantur mulieres eorum a
+            pollutis barbaris. Et mittunt sortes filii Ismahel super filios et filias eorum.</div>
+         <div n="9" type="sec">Et traditur terra Persarum in corruptionem et perdictionem, et
+            habitatores eius in captivitatem et occisionem abducentur, Armeniam quoque et eos, qui
+            habitant in ea, in captivitatem et gladio corruentes. Capadociam in corruptionem et in
+            desolationem, et 5 eius habitatores in captivitate et iugulationem absorbentur.</div>
+         <div n="10" type="sec">Sicilia erit in desolationem et eos, qui habitant in ea, in
+            occisionem et captivitatem ducuntur. Terra Syriae erit in solitudine et corrupta, et
+            commorantes in ea in gladio perient. Cilicia desolabitur et, qui inhabitant in ea, erunt
+            in corruptionem et in captivitate ducentur.</div>
+         <div n="11" type="sec">Grecia in occisione gladii et perditione vel corruptionem et, qui
+            sunt eius habitatores, in captivitate ducuntur. Romania corrumpitur et in occisione erit
+            et convertuntur in fuga. Et insulas maris in desolationem erunt et, qui in eis habitant,
+            peribunt in gladio et in captivitate.</div>
+         <div n="12" type="sec">Aegyptus quoque et Oriens vel Siriam sub iugo erunt et in
+            tribulationes inmensas coartantur. Angariabuntur enim sine misericordia et appetuntur
+            super vires animarum suarum pundus auri vel argenti. Et erunt habitatores Aegypti vel
+            Syriae in angustia et afflictionem septies tantum his, qui in captivitate sunt.</div>
+         <div n="13" type="sec">Et replebitur terra promissiones hominum a quatuor ventis, qui sub
+            caelo sunt. Et erunt tamquam locustae in multitudinem, que congregabitur a vento, et
+            erit in eis pestilentia et fames. Et exaltabitur cor eorum exterminatorum et in
+            superbiam elevabitur et loquentur excelsa usque ad tempus constitutum eis et obtenebunt
+            introitumque et exitum aquilonis et eoam, occasum et a maritima, et erunt omnia sub iugo
+            eorum: homines quoque et iumenta, volatilia vel pisces mari natantia, etiam et aquis
+            maris obaudient eis.</div>
+         <div n="14" type="sec">Et destitute civitates, quae viduate ab eis de habitatoribus suis
+            fuerunt, erunt illorum. Et scribent sibi terminos per solitudinem. Et ligna silvarum et
+            pulverem terrae et lapides et ubertas terrae et pisces maris erunt in introitum eorum.
+            Et labores vel sudores agri- cultorum terrae et hereditas divitum et, que inferuntur
+            sanctis, sive aurum sive argentum sive lapides praetiosae seu eramentum vel ferrum sit,
+            omnia illorum erit. Indumenta etiam sacrata vel praeclara et escas omnes et omnem,
+            quicquid praetiosum est, illorum erunt. Et exaltabitur cor eorum usque adeo, ut et
+            mortuos appetant secundum aequalitatem vivorum. Similiter autem et ex pupillis et viduis
+            et ex sanctorum exigentes.</div>
+         <div n="15" type="sec">Et non miseribuntur inopem et pauperem, omnem enim maiorem natum
+            inhonorant et affligunt egenus et non habebunt viscera misericordiae neque super
+            inbecilis et infirmos, sed inludent et derident omnes, qui in sapientia fulgebunt, et
+            eos, qui in rebus rei publicȩ magnificantur. Et conticiscent universi silentio vel
+            timore, non valentes arguere vel proloqui: »quid est hoc?« aut: »quid illud? «, et
+            obstupescunt omnes pre tim ore, qui inhabitant terram. Et erit sapientia eorum et
+            disciplina prodiens a semet ipsam eis, non subcrescens neque † addendum vel adiciendum
+            ad eam † et non erit, qui possit inmutare aut quirillare sermones eorum.</div>
+         <div n="16" type="sec">Et erit iter eorum a mari usque ad mari, et ab ortu solis usque ad
+            occasum, et ab aquilone usque ad desertum Ethribum. Et vocabitur iter eorum viam
+            angustiae et gradiuntur in ea senes et seniores sue, inopesque et divites, esurientes et
+            sicientes, compediti, et beatificant eos, qui iam mortui sunt.</div>
+         <div n="17" type="sec">Etiam namque ab apostolo praedicta disciplina - seu discessio -haec
+            est. Qui ut enim inquid: »nisi cum vinerit discessio primum et revelatus fuerit homo
+            peccati, filius perditiones«. Si quidem discessio est disciplina vel correptio et
+            corripiuntur universi habitatores tenae. Et quoniam onager appellavit Deus Ismahelem
+            patrem illorum, propter hoc onagri et capriae a deserto et omnem speciem bestiarum
+            supergredientum raviem et mansuetorum conterentur ab eis et paucitabunt sub eis et
+            persequentur homines et bestias silvae famae interibunt eo, quod distituti sunt regiones
+            tenae, et abscident omnem lignum saltui et speciem montium disperiet, et desolabuntur
+            urbes et erunt regiones sine via, eo quod deminuta est humanitas, et polluitur terra a
+            sanguinae et continebit fructos suos. Non enim sunt homines qui tyrannico morae
+            barbaricae nationes obtenentes, sed filii sunt a deserto exilientes et ideo in
+            desolationem prodiunt. Corrupti sunt et in corruptione mittentur, et odibiles sunt atque
+            abhominabiles et ideo odium amplectuntur. Et in principia exitus eorum incipientes ab
+            heremo habentibus in utero gladio perforabunt et fetum conpungent simul cum matribus, et
+            infantes ab umeris nutricum rapientes percutient, et erunt bestiis in escam.</div>
+         <div n="18" type="sec">Sacerdotes autem intrinsecus sanctorum locorum coinquinantes
+            interficient et concumbent cum mulieribus [intus] in venerabilibus vel sacratis locis,
+            in quibus mysticum et incontaminatum sacrificium perficitur caelebrandum. Et sacratas
+            stolas superinduentur mulieres eorum et super filios suos inponent ea et super filias
+            suas. Et in equis suis et super lectis expandent ea et iumenta sua ad sepulchra
+            sanctorum colligant tamquam ad praesipia. Et erunt homicidae et percorrupti et ignis
+            probationes genere christianorum.</div>
+      </div>
+      <div n="12" type="ch">
+         <div n="1" type="sec">Sacratissimus enim apostolus inquid: »Non enim omnes, qui ex Israhel,
+            hi sunt Israhel «. Itaque non omnes, qui dicuntur christiani, ipsi christiani sunt.
+            »Septe enim«, sicut dicit Scriptura, »virorum milia salvati sunt filiorum Israhel, qui
+            non curvaverunt genua sua ante Baal«, et omnes populus Israhel per eos sal vi facti
+            sunt.</div>
+         <div n="2" type="sec">Sic et in ipso tempore discessiones et eruditionis filiorum Ismahel
+            pauci inveniuntur christiani viri, quemadmodum ipse Salvator noster in sanctis
+            evangeliis dicit: » Utique veniens Filios hominis, putas, inveniet fidem in terram? «.
+            Minuetur vero in tempore illo spiritus perfectorum.</div>
+         <div n="3" type="sec">Et multi abnegabunt viram fidem, vivificatoriam vero crucem Christi
+            et sancta mysteria. Etiam sine aliqua vim vel tormenta aut flagellis abnegant Christum
+            et adsecuntur transgressoribus.</div>
+         <div n="4" type="sec">Praecidens enim divinitus plenus Apostolus praedicavit, dicens quia
+            »in temporibus illis recidunt quidam a fidem, adtendentes spiritibus erroris et demonium
+            doctrinas in infidelitate et dolo mendacibus sermonibus et cauteriantium suam
+            conscientiam« .</div>
+         <div n="5" type="sec">Et continuo adiciens idem dicit: »In novissimis diebus insurgunt
+            tempora saevissima. Erunt enim homines semetipsos amantes, amatores pecuniae, elati,
+            superbi, blasphemi, parentibus non oboedientes, inutilis, inmundi, sine affectionem,
+            absque foes dere, delatores, incontenentes, inmoderati, malorum amatoris, proditores,
+            susorrones, inflati, luxoriosi magis quam amatores Dei, habentes quidem pietatis formam,
+            virtutem autem eius negantes «.</div>
+         <div n="6" type="sec">Et omnes inbicillis et infidelis in ilia correptionem manifestabuntur
+            et semetipsos segregabunt ab ecclesiis sanctis propria voluntate. Idem enim tempus
+            advocat eos in errorem. Humiliter vero sentientes et quieti suavisque et verissimi,
+            liberi quoque vel sapientes, etiam et electi vel utiles non queruntur in tempore
+            illo,</div>
+         <div n="7" type="sec">sed propter hos inquiruntur, quicumque tales sunt: semetipsos
+            diligentes, cupidi pecuniae, elati, superbi, blasphematores, raptares, plurium
+            possessores, circumventores, ebriosi, inmisericordes, transgressores, sine affectionem,
+            sine vinculo caritatis, insuaviles, inmundi, damnatores, incontinentes, inmansueti,
+            furibundi, proditores, susurrones, protervi, inflati, luxoriosi, lenocinio amatores
+            magis quam amatores Dei, fornicatores, adulteri, fures, periuratores, mendaces,
+            plagiarii, habentes speciem quidem pietatis, virtutem autem eius negantes.</div>
+         <div n="8" type="sec">Isti tales erunt mtmstri dierum illorum et omnia, que ab eis
+            imperantur, facile perficiunt. Timentes vero Deum in nihilo reputabuntur in conspectu
+            oculorum eorum, sed erunt in vituperationem, quemadmodum conculcatur stercore.</div>
+      </div>
+      <div n="13" type="ch">
+         <div n="1" type="sec">Erunt enim homines in illa correptionem filiorum Ismahel et veniunt
+            in necessitatibus usque quo desperent vitam suam. Et tollitur honor a sacerdotibus et
+            subpraemitur ministerium Dei et quiescit omnis sacrificium ab ecclesiis, et erunt
+            sacerdotes sicut et populus.</div>
+         <div n="2" type="sec">Et in eodem tempore, seu in septimo ebdomatico tempore, cumque
+            conplebitur numerus annorum potentatui eorum, per quod obtenuerunt terram,
+            multiplicabitur etiam et tribulatio super homines et super iumenta, et erit fames et
+            pestilentia et corrumpentur homines et proicientur homines super faciem terrae sicut
+            pulvis, et per singulos dies in tempore illo adhuc plagam unam adicietur
+            hominibus.</div>
+         <div n="3" type="sec">Etiam dormiens adcuvabit homo ad vesperum et exsurget mane et
+            reperiet ad limen ianuae domus suae, qui eum exigunt pundus auri vel argenti et
+            angariantes se, et expenditur omnes acceptio auri et argenti. Et venundabit homo omnem
+            utensilium suum et feramenta sua operaturia et mortalia vestimenta sua.</div>
+         <div n="4" type="sec">Et in ipso ebdomatico tempore vindunt homines natos suos. Cuius
+            itaque rei gratia dispexerit Deus fidelis ut sufferant has tribulationes, sed ut
+            monstrentur qui sunt fidelissimi quoque vel infidelis et ut separentur lollia a tritico
+            mundo, eo quod ignis probas tionis est tempus illud?</div>
+         <div n="5" type="sec">Et longanimiter feret Deus super tribulationes iustorum et fidelium,
+            ut manifesti appareant electi. Praedixit enim nobis Deus ita: »Beati«, inquid, »estis,
+            cum exprobraverint vos et persecuti vos fuerint et dixerint omnem verbum malum adversum
+            vos props ter me mentientes. Gaudite et exultati, quoniam mercis vestra copiosa est in
+            caelis. Sic enim persecuti sunt prophetas, qui fuerunt ante vos.« »Qui autem
+            sustinuerunt usque in finem, hie salvus erit«.</div>
+         <div n="6" type="sec">Et post tribulationem, quae fit a filiis Ismahel, cumque periculati
+            fuerint homines tribulatione passi, nequaquam habentes spem salutis aut redemptionem
+            aliquam de manibus eorum, persecuti et tribulati ab eis, afflicti, qui fuerint in famem
+            et sitem et nuditate, s barbaris vero nationes erunt hi commedentes et bibentes et
+            iocundantes, in victoriis eorum gloriantes et in desolationibus, quibus desolaverunt
+            Persidamque et Romaniam, Ciliciam quoque et Syriam, Cappadotiamque et Isauriam, Africam
+            quoque vel Siciliam et eos, qui habitant proximae Romam et insulas, circumamicti
+            quemadmodum sponsi, et blasphemantes dicunt quia: »Nequaquam habebunt christiani
+            ereptionem de manibus nostris«.</div>
+         <div n="11" type="sec">Tunc subito insurgent super eos tribulatio et angustia, et exiliet
+            super eos rex Gregorum, sive Romanorum, in furore magno et expergiscitur tamquam homo a
+            somno vini, quem exaestimabant homines tamquam mortuum esse et in nihilo utilem
+            proficisse. Hic exiet super eos a mare Aethiopiae et mittit gladium et desolationem in
+            Ethribum, que est eorum patria, et captivabit mulieres eorum et filios illorum. Super
+            habitantes autem terram promissiones discendent filii regis in gladio et concidunt eos a
+            terra.</div>
+         <div n="12" type="sec">Et inruet super eos timor et tremor undique, et ipse et uxores et
+            filii eorum et lugebunt infantes suos, flentes super eos, et omnia castra eorum, que
+            sunt in terra patrum illorum, in manus regis Romanorum tradentur in gladio et
+            captivitatem et morte et corruptionem.</div>
+         <div n="13" type="sec">Et erit rex Romanorum inponens iugum suum super eos septiens tantum,
+            quod erat iugum eorum super terra. Et conpraehendit eos angustia magna, famem et sitem
+            et tribulatio. Et erunt servi ipsi et mulieres et filii eorum, et servient eis, qui sibi
+            serviebant, et erit servitus eorum amarissimi et durissime centuplo.</div>
+         <div n="14" type="sec">Et tunc pacificabitur terra, que ab eis fuerat distituta, et rediet
+            unusquisque in terram suam et in hereditatem patrum suorum, Armeniam, Ciliciam,
+            Isauriam, Africam, Greciam, Siciliam, et omnes, qui de captivitatem relictus est,
+            revertetur in propria et in paterna sua.</div>
+         <div n="15" type="sec">Et multiplicabuntur homines super terra, que dissolata fuerat, sicut
+            locustae in multitudinem. Aegyptus vero desolabitur, Arabia igne concremabitur, terra
+            Auraniae cremabitur et maritimȩ pacificantur. Et omnes indignatio et furor regis
+            Romanorum super eos, qui abnegaverunt dominum nostrum Iesum Christum, exardiscit et
+            sedebit terra in pace. Et erit pax et tranquillitas magna super terra, qualis nondum est
+            facta, sed neque fiet similis ilia eo quod novissima est et in fine saeculorum.</div>
+         <div n="16" type="sec">Erit enim laetitiam super terram et commorabuntur hominis in pace et
+            reaedificabunt civitates et liberabuntur sacerdotes de necessitatibus suis et
+            requiescent homines in tempore illo a tribulationibus suis.</div>
+         <div n="17" type="sec">Et haec est pax, quam beatus Apostolus exposuit, quia »cum dixerint:
+            'pax et securitas', tunc eis superveniet subito interitus «, et continuo Dominus in
+            evangelio sic inquiens: »sicut enim in diebus Noe erant homines manducantes et bibentes,
+            nubentes et nuptui tradentes, ita erit et in novissimo die«.</div>
+         <div n="18" type="sec">In hac igitur pacem sedebunt homines super terra cum gaudio et
+            laetitia, commedentes et sese potantes, nubentes et dantes ad nuptias, exultantes et
+            gaudentes, et aedificationes construentes, et non erit in corde eorum timor vel
+            solicitudo.</div>
+         <div n="19" type="sec">Tunc reserabuntur portae aquilonis et egredientur virtutes gentium
+            illarum, quas conclusit intus Alexander, et concutietur omnis terra a conspectu earum et
+            expaviscunt homines et fugientes conterriti abscondent se in montibus et in speluncis et
+            in munu- mentis. Et mortificabuntur a timore et corrumpentur prae pavore quamplurimi, et
+            non erit, qui corpora sepeliat.</div>
+         <div n="20" type="sec">Gentes namque, que exient ab aquilone, commedent cames hominum et
+            bibent sanguinem bestiarum sicut aqua et commedent inmundas, serpentes et scurpionis et
+            omnem sordidissimum et abominabilem genus bestiarum et reptilia, que repunt super
+            terram, iumentorum autem et corpora mortua et abortitia mulierum. Etiam occidunt
+            parvulus et cedunt eos suis matribus...et edunt eos. Et corrumpent terram et
+            contaminabunt earn..., et nullus erit, qui poterit stare coram eis.</div>
+         <div n="21" type="sec">Post ebdomata vero tempores, cumque [iam] conpraehenderint civitatem
+            Ioppen, emittit dominus Deus unum ex principibus militiae suae et percuciet eos in uno
+            momento temporis. Et post haec discendit rex Romanorum et demorabitur in Hierusalem
+            septimana temporum et dimedia, quod est X anni et dimidium, et, cum suplebuntur decim et
+            demedium anni, apparebit filios perditiones.</div>
+      </div>
+      <div n="14" type="ch">
+         <div n="1" type="sec">Hie nascitur in Chorozaim et nutrietur in Bethsaidam et regnavit in
+            Gapharnaum. Et laetabitur Chorozaim eo quod natus est in ea, et Bethsaida, propter quod
+            nutritus est in ea, et Capharnaum ideo, quod regnaYerit in ea. Propter hanc causam in
+            eYangelio Dominus tertio sententiam dedit 'Vae', dicens: » Vae tibi, Chorozaim; Yy tibi,
+            Bethsaida, et tibi, Caphamaum, si usque in caelum exaltaYeris, usque ad infemum
+            discendes!« .</div>
+         <div n="2" type="sec">Et cum apparuerit filius perditiones, ascendit rex Romanorum sursum
+            in Golgotha, in quo confixum est lignum sanctae crucis, in quo loco pro nobis Dominus
+            mortem sustenuit.</div>
+         <div n="3" type="sec">Et tollit rex coronam de capite suo et ponet earn super crucem et
+            expandit manus suas in caelum et tradet regnum christianorum Deo et patri.</div>
+         <div n="4" type="sec">Et adsumetur crux in caelum simul cum coronam regis, propter quod
+            quia crux, in qua pependit dominus noster Iesus Christus propter communem omnium
+            salutem, ipsa crux incipiet apparere ante eum in adventum ipsius ad arguendum perfidiam
+            infidelium.</div>
+         <div n="5" type="sec">Et complebitur prophetia David, que dicit in novissimis die bus:
+            »Aethiopia praeveniet manus eius Deo«, eo quod ex semine filiorum Chuseth, filiae Phol
+            regis Aethiopiae, ipsi novissimi praeveniunt manus suas Deo.</div>
+         <div n="6" type="sec">Et cumque exaltabitur crux in caelum sursum, etiam tradet continuo
+            spiritum suum Romanorum rex. Tunc distruetur omnem principatum et potestatem, ut
+            appareat manifestus filius perditiones. Est autem hie de tribu Dan secundum prophetiam
+            patriarchae Iacob, que dicit: »Dan, serpens in via et accubans in semitam, momordens
+            calcaneum equi, et cadet ascensor retrorsum, salutarem Domini sustenens «.</div>
+         <div n="7" type="sec">Equus igitur est veritas et pietas iustorum, calcaneum vera novissima
+            dies. Et hi sancti, qui in eodem tempore super aequo, scilicet super veram fidem,
+            aequitantes, persequuntur a serpente, sive filio perditiones; in calcaneo mordentur,
+            vidilicet in ultima die, in phantasmatis et in mendacibus signis, que fiunt ab eo.</div>
+         <div n="8" type="sec">Faciet etenim tunc signa et prodigia multa super tena, inercia vel
+            invicillia. Caeci namque respiciunt, claudi ambulant, surdi audiunt et daemoniosi
+            curantur. Convertit enim sol in tenebris et lunam in sanguinem et in his eius mendacibus
+            signis et deceptiones prodigia seducit, si potest fieri, etiam electus, secuti Dominus
+            explanavit.</div>
+         <div n="9" type="sec">Aspiciens enim patriarcha Iacob cordis oculis consideravit, que
+            futura esset a venenoso serpente, vel filio perditionis, facienda in hominibus
+            tribulatio seu angustiam, et exposuit, sicut ex persona generis humani vocem emittens:
+            »Salutarem tuum expectabo, Domine«. Dominus autem continuo praefatus est dicens: » Si
+            fieri potest etiam in errorem inducere electos «.</div>
+         <div n="10" type="sec">Ingredietur enim hie filius perditiones in Hierusolimam et sedibit
+            in templo Dei sicut Deus, homo cum sit camalis ex semini viri et ex utero mulieres, de
+            tribu Dan discendens. Etiam nam et Iudas Scariothes, traditur Domini, de tribu Dan
+            existebat et ipse.</div>
+         <div n="11" type="sec">Cumque multiplicata fuerit tribulatio dierum illorum a filio
+            perditiones, non ferit divinitas aspicere perditionem generis humani, quem redimit
+            proprio sanguinem et mittit continuo suos famu- los sincerissimusque carissimus, id est
+            Enoch et Helian, ad arguendum inimicum. Palam omnium ergo gentium corripient eius
+            seductionem et ostendunt eum mendacem coram omnem hominem et nihil esse, et quia propter
+            interitum et perditionem multorum exiet. </div>
+         <div n="12" type="sec">Itaque gentes videntes illum confusum et eius seductionem arguendam
+            a famulis Dei, sinent eum et fugient ab illo et adherebunt iustis illis. Videns igitur
+            seductor semet ipsum dirissime increbatum et ab omnibus contemptum furore et ira fervens
+            interficiet sanctos illos.</div>
+         <div n="13" type="sec">Tunc apparebit signum adventus Filii hominis, et veniet in nubibus
+            caeli cum gloria caeleste et »interficiet eum Dominus spiritu oris sui« secundum
+            expositionem apostolicam.</div>
+         <div n="14" type="sec">»Tunc fulgebunt iusti « »tam quam stelle in mundo verbum vitae in se
+            contenentes«, impii autem proicientur in infernum, ex quo eripiamur per gratiam et
+            humanitatem domini Dei et Salvatoris nostri Iesu Christi, cum quo est Patri una cum
+            Spiritu sancto omnis honor et gloria, potestas, magnitudo et imperium, nunc et semper et
+            in saecula saeculorum. Amen.</div>
+      </div>
+      <div n="explicit" type="exp">EXPLICIT SERMO SANCTI METHODII EPISCOPI DE FINE MUNDI. DEO
+         GRACIAS.</div>
+   </body>
+</TAN-T>
