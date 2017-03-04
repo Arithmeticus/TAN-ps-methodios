@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../TAN-1-dev/schemas/TAN-T.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href="../TAN-1-dev/schemas/TAN-T.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--<?xml-model href="http://textalign.net/release/1/dev/schemas/TAN-T.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href="http://textalign.net/release/1/dev/schemas/TAN-T.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
-<TAN-T xmlns="tag:textalign.net,2015:ns" TAN-version="1"
+<?xml-model href="../../TAN-1-dev/schemas/TAN-T.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../TAN-1-dev/schemas/TAN-T.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--<?xml-model href="http://textalign.net/release/TAN-1-dev/schemas/TAN-T.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://textalign.net/release/TAN-1-dev/schemas/TAN-T.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TAN-T xmlns="tag:textalign.net,2015:ns" TAN-version="1 dev"
    id="tag:kalvesmaki.com,2014:methodios-apoc:syr:1998">
    <head>
       <name>Reinink's Syriac edition of the Apocalypse of pseudo-Methodios</name>
@@ -300,7 +300,7 @@
             ܕܬܐܪܬܘܢܗܿ ܐܠܐ ܡܛܠ ܥܘܠܐ ܕܥܡܘܪ̈ܝܗܿ ܐܦ ܗܠܝܢ ܒܢ̈ܝ ܐܝܫܡܥܝܠ ܠܐ ܗܘܐ ܡܛܠ ܕܪܚܡ ܠܗܘܢ ܐܠܗܐ ܝܗܒ ܠܗܘܢ
             ܕܢܥܠܘܢ ܒܡܠܟܘܬܐ ܕܟܪ̈ܝܣܛܝܢܐ ܐܠܐ ܡܛܠ ܥܘܠܐ ܘܚܛܝܬܐ ܕܡܬܥܒܕܐ ܒܐܝܕ̈ܝܐ ܕܟܪ̈ܝܣܛܝܢܐ ܕܠܐ ܐܬܥܒܕܬ
             ܐܟܘܬܗܿ ܒܚܕ ܡܢ ܕܪ̈ܐ ܩܕܡ̈ܝܐ</div>
-         <div n="6~7" type="sec">ܕܡܬܟܣܝܢ ܗܘܘ ܓܒܪ̈ܐ ܒܠܒܘ̈ܫܐ ܦܚ̈ܙܐ ܕܢܫ̈ܐ ܙܢܝ̈ܬܐ ܕܡܨܛܒܬܝܢ ܗܘܘ ܐܝܟ
+         <div n="6-7" type="sec">ܕܡܬܟܣܝܢ ܗܘܘ ܓܒܪ̈ܐ ܒܠܒܘ̈ܫܐ ܦܚ̈ܙܐ ܕܢܫ̈ܐ ܙܢܝ̈ܬܐ ܕܡܨܛܒܬܝܢ ܗܘܘ ܐܝܟ
             ܒܬܘ̈ܠܬܐ ܘܩܝܡܝܢ ܓܠܝܐܝܬ ܒܫܘ̈ܩܐ ܕܡܕܝܢ̈ܬܐ ܘܡܬܦܩܪܝܢ ܗܘܘ ܒܪܘܝܘܬܐ ܘܒܫܪܝܚܘܬܐ ܕܠܐ ܟܘܚܕ ܘܡܫܬܘܬܦܝܢ
             ܗܘܘ ܚܕ ܥܡ ܚܕ ܐܦ ܢܫ̈ܐ ܙܢܝ̈ܬܐ ܩܝ̈ܡܢ ܗܘ̈ܝ ܓܠܝܐܝܬ ܒܫܘ̈ܩܐ ܘܥܐܠ ܗܘܐ ܓܒܪܐ ܘܡܙܢܐ ܘܢܦܩ ܘܐܬܐ ܒܪܗ
             ܘܒܗܿ ܟܕ ܒܗܿ ܡܬܛܢܦ ܗܘܐ ܘܐܚ̈ܐ ܘܐܒ̈ܗܐ ܘܒܢ̈ܝܐ ܟܠܗܘܢ ܐܟܚܕܐ ܡܬܛܢܦܝܢ ܗܘܘ ܒܚܕܐ ܐܢܬܬܐ ܘܥܠܗܕܐ ܐܡܪ
@@ -423,7 +423,7 @@
          <div n="16" type="sec">ܘܬܗܘܐ ܚܕܘܬܐ ܒܟܠܗܿ ܐܪܥܐ ܘܢܬܒܘܢ ܒܢܝ̈ܢܫܐ ܒܫܝܢܐ ܪܒܐ ܘܢܬܚ̈ܕܬܢ ܥܕ̈ܬܐ
             ܘܢܬܒܢ̈ܝܢ ܡܕ̈ܝܢܬܐ ܘܢܬܚܪܪܘܢ ܟܗ̈ܢܐ ܡܢ ܫܩܠܐ ܘܢܬܬܢܝܚܘܢ ܟܗ̈ܢܐ ܘܒܢܝ̈ܢܫܐ ܒܗܿܘ ܙܒܢܐ ܡܢ ܥܡܠܐ
             ܘܠܐܘܬܐ ܘܛܘܪܦܐ.</div>
-         <div n="17~18" type="sec">ܡܛܠ ܕܗܘ ܐܝܬܘܗܝ ܫܝܢܐ ܗܿܘ ܕܐܡܪ ܒܐܘܢܓܠܝܘܢ ܕܝܠܗ ܕܢܗܘܐ ܠܡ ܫܝܢܐ ܪܒܐ ܕܠܐ
+         <div n="17-18" type="sec">ܡܛܠ ܕܗܘ ܐܝܬܘܗܝ ܫܝܢܐ ܗܿܘ ܕܐܡܪ ܒܐܘܢܓܠܝܘܢ ܕܝܠܗ ܕܢܗܘܐ ܠܡ ܫܝܢܐ ܪܒܐ ܕܠܐ
             ܗܘܐ ܐܟܘܬܗ ܘܢܬܒܘܢ ܒܢܝ̈ܢܫܐ ܒܢܝܚܐ ܘܢܐܟܠܘܢ ܘܢܫܬܘܢ ܘܢܚܕܘܢ ܒܚܕܘܬܐ ܕܠܒܐ ܘܓܒܪ̈ܐ ܢܣܒܘܢ ܢܫ̈ܐ ܘܢܫ̈ܐ
             ܢܬܝܗ̈ܒܢ ܠܓܒܪ̈ܐ ܘܢܒܢܘܢ ܒܢܝ̈ܢܫܐ ܘܢܨܒܘܢ ܟܪ̈ܡܐ ܘܟܕ ܠܡ ܐܟܠܝܢ ܘܫܬܝܢ ܘܚܕܝܢ ܘܪܘܙܝܢ ܘܠܝܬ ܒܝܫܐ ܘܠܐ
             ܪܢܝܗܿ ܕܒܝܫܬܐ ܘܠܐ ܕܚܠܬܐ ܘܙܘܥܬܐ ܒܠܒ̈ܘܬܗܘܢ.</div>
@@ -472,9 +472,9 @@
             ܗܟܢܐ ܕܠܦܘܪܩܢܟ ܣܟܝܬ ܡܪܝܐ ܘܡܪܢ ܬܘܒ ܐܡܪ ܕܐܢ ܡܫܟܚ ܣܛܢܐ ܐܦ ܠܓܒ̈ܝܐ ܡܛܥܐ.</div>
          <div n="10" type="sec">ܥܐܠ ܓܝܪ ܗܘ ܗܢܐ ܒܪ ܐܒܕܢܐ ܠܐܘܪܝܫܠܡ ܘܝܬܒ ܒܗܝܟܠܐ ܕܐܠܗܐ ܘܥܒܕ ܢܦܫܗ ܐܝܟ
             ܐܠܗܐ ܐܝܬܘܗܝ ܓܝܪ ܗܢܐ ܒܪܐܢܫܐ ܕܚܛܝܬܐ ܡܓܫܡܐ ܡܢ ܙܪܥ ܓܒܪܐ ܘܡܬܝܠܕ ܡܢ ܡܙܘܓܬܐ ܡܢ ܫܒܛܗ ܕܕܐܢ.</div>
-         <div n="11~12" type="sec">ܗܢܐ ܕܝܢ ܝܠܕܐ ܕܐܒܕܢܐ ܒܝܕ ܡܪܝܪܘܬ ܝܨܪܗ ܡܛܥܐ ܠܟܠ ܐܢ ܡܫܟܚ ܒܝܕ ܕܥܒܝܕ
+         <div n="11-12" type="sec">ܗܢܐ ܕܝܢ ܝܠܕܐ ܕܐܒܕܢܐ ܒܝܕ ܡܪܝܪܘܬ ܝܨܪܗ ܡܛܥܐ ܠܟܠ ܐܢ ܡܫܟܚ ܒܝܕ ܕܥܒܝܕ
             ܒܝܬ ܡܥܡܪܐ ܠܟܠܗܘܢ ܕܝ̈ܘܐ ܘܟܠܗܿ ܡܥܒܕܢܘܬܗܘܢ ܒܗ ܡܬܓܡܪܐ.</div>
-         <div n="13~14" type="sec">ܘܒܡܬܝܬܗ ܕܡܪܢ ܕܡܢ ܫܡܝܐ ܡܫܬܠܡ ܠܓܝܗܢܐ ܕܢܘܪܐ ܘܠܚܫܘܟܐ ܒܪܝܐ ܘܬܡܢ ܢܗܘܐ
+         <div n="13-14" type="sec">ܘܒܡܬܝܬܗ ܕܡܪܢ ܕܡܢ ܫܡܝܐ ܡܫܬܠܡ ܠܓܝܗܢܐ ܕܢܘܪܐ ܘܠܚܫܘܟܐ ܒܪܝܐ ܘܬܡܢ ܢܗܘܐ
             ܒܒܟܝܐ ܘܒܚܘܪܩܐ ܕܫܢ̈ܐ ܥܡ ܟܠܗܘܢ ܐܝܠܝܢ ܕܗܝܡܢܘ ܒܗ ܘܠܢ ܕܝܢ ܢܫܘܐ ܡܪܢ ܝܫܘܥ ܡܫܝܚܐ ܠܡܠܟܘܬܐ ܕܝܠܗ
             ܫܡܝܢܝܬܐ ܥܡ ܟܠܗܘܢ ܥܒ̈ܕܝ ܨܒܝܢܗ ܘܢܣܩ ܬܫܒܘܚܬܐ ܘܐܝܩܪܐ ܘܣܓܕܬܐ ܘܪܘܡܪܡܐ ܗܫܐ ܘܒܟܠܙܒܢ ܠܥܠܡܥܠܡܝܢ
             ܐܡܝ</div>

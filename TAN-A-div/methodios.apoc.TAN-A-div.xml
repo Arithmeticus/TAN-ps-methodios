@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../TAN-1-dev/schemas/TAN-A-div.rnc" type="application/relax-ng-compact-syntax"?><?xml-model href="../../TAN-1-dev/schemas/TAN-A-div.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TAN-A-div xmlns="tag:textalign.net,2015:ns" TAN-version="1/dev" id="tag:kalvesmaki.com,2014:methodios-apoc:grc:1998:TAN-A-div:2016-04-10T21:26:37.002-04:00">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../TAN-1-dev/schemas/TAN-A-div.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../TAN-1-dev/schemas/TAN-A-div.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TAN-A-div xmlns="tag:textalign.net,2015:ns" TAN-version="1 dev"
+   id="tag:kalvesmaki.com,2014:methodios-apoc:grc:1998:TAN-A-div:2016-04-10T21:26:37.002-04:00">
    <head>
       <name>Alignment file for The Apocalypse, written by pseudo-Methodius</name>
       <rights-excluding-sources which="by-sa_4.0" rights-holder="kalvesmaki"/>
@@ -11,20 +15,25 @@
       <source xml:id="syr">
          <IRI>tag:kalvesmaki.com,2014:methodios-apoc:syr:1998</IRI>
          <name>Reinink's Syriac edition of the Apocalypse of pseudo-Methodios</name>
-         <location href="../methodios.apoc.syr.1998.xml" when-accessed="2016-04-10T21:26:37.002-04:00"/>
+         <location href="../methodios.apoc.syr.1998.xml"
+            when-accessed="2016-04-10T21:26:37.002-04:00"/>
       </source>
       <source xml:id="grc">
          <IRI>tag:kalvesmaki.com,2014:methodios-apoc:grc:1998</IRI>
          <name>Aerts and Kortekaas's Greek edition of the Apocalypse of pseudo-Methodios</name>
-         <location href="../methodios.apoc.grc.1998.xml" when-accessed="2016-04-10T21:26:37.002-04:00"/>
+         <location href="../methodios.apoc.grc.1998.xml"
+            when-accessed="2016-04-10T21:26:37.002-04:00"/>
       </source>
       <source xml:id="lat1">
          <IRI>tag:kalvesmaki.com,2014:methodios-apoc:lat:1998</IRI>
          <name>Aerts and Kortekaas's Latin edition of the Apocalypse of pseudo-Methodios</name>
-         <location href="../methodios.apoc.lat.1998.xml" when-accessed="2016-04-10T21:26:37.002-04:00"/>
+         <location href="../methodios.apoc.lat.1998.xml"
+            when-accessed="2016-04-10T21:26:37.002-04:00"/>
       </source>
       <source include="bible"/>
-      <declarations/>
+      <declarations>
+         <rename-div-ns include="bible"/>
+      </declarations>
       <agent xml:id="stylesheet" roles="editor">
          <IRI>tag:textalign.net,2015:stylesheet:create:tan-a-div-from-collection</IRI>
          <name>TAN stylesheet to create a TAN-A-div file from a collection of TAN-T(EI) files</name>
@@ -43,373 +52,335 @@
          <IRI>http://schema.org/editor</IRI>
          <name xml:lang="eng">editor</name>
       </role>
-      <change when="2016-04-10T21:26:37.002-04:00" who="stylesheet">Created file.</change>
+      <change when="2016-04-10T21:26:37.002-04:00" who="stylesheet">Created file, using OCR as a
+         basis for the index.</change>
+      <comment when="2016-10-25" who="kalvesmaki">Index is based upon the one by Aerts and
+         Kortekaas, ignoring those references that appeal exclusively to a version that is not
+         encoded, i.e., the app. crit. and the Gall. Ps., and it excludes the Latin preface. The
+         index also respects references that they regard as source-specific, but not trying (yet) to
+         reconcile them with the Syriac version</comment>
    </head>
    <body>
       <equate-works include="bible"/>
+      <realign include="bible"/>
+      <comment when="2016-10-25" who="kalvesmaki">The following realigns are because the Greek edition retains two parallel versions for these sections</comment>
       <realign>
-         <anchor-div-ref ref="11 6 - 11 7" src="grc"/>
-         <div-ref ref="11 6~7" src="syr"/>
+         <anchor-div-ref src="syr" ref="8 5"/>
+         <div-ref src="grc" ref="8 5 1"/>
       </realign>
       <realign>
-         <anchor-div-ref ref="13 17 - 13 18" src="grc"/>
-         <div-ref ref="13 17~18" src="syr"/>
+         <anchor-div-ref src="syr" ref="8 5"/>
+         <div-ref src="grc" ref="8 5 2"/>
       </realign>
       <realign>
-         <anchor-div-ref ref="14 11 - 14 12" src="grc"/>
-         <div-ref ref="14 11~12" src="syr"/>
+         <anchor-div-ref src="syr" ref="8 6"/>
+         <div-ref src="grc" ref="8 6 1"/>
       </realign>
       <realign>
-         <anchor-div-ref ref="14 13 - 14 14" src="grc"/>
-         <div-ref ref="14 13~14" src="syr"/>
+         <anchor-div-ref src="syr" ref="8 6"/>
+         <div-ref src="grc" ref="8 6 2"/>
       </realign>
-      <realign>
-         <anchor-div-ref ref="8 5" src="syr"/>
-         <div-ref ref="8 5 1" src="grc"/>
-         <div-ref ref="8 5 2" src="grc"/>
-      </realign>
-      <realign>
-         <anchor-div-ref ref="8 6" src="syr"/>
-         <div-ref ref="8 6 1" src="grc"/>
-         <div-ref ref="8 6 2" src="grc"/>
-      </realign>
-      <realign>
-         <div-ref ref="13 7" src="grc"/>
-         <div-ref ref="13 8" src="grc"/>
-         <div-ref ref="13 9" src="grc"/>
-         <div-ref ref="13 10" src="grc"/>
-         </realign>
-      <realign>
-         <div-ref ref="explicit" src="lat1"/>
-      </realign>
-      
       <align>
-         <div-ref src="bhs" ref="Gen 6:4"/>
-         <div-ref src="syr" ref="2 3"/>
+         <div-ref work="bhs" ref="Gen 6:4"/>
+         <div-ref work="syr" ref="2 3"/>
       </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Gen 10:9-10"/>
+      <align>
+         <div-ref work="bhs" ref="Gen 10:9 - 10"/>
          <div-ref src="lat1" ref="3 5"/>
       </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Gen 11:2"/>
+      <align>
+         <div-ref work="bhs" ref="Gen 11:2"/>
          <div-ref src="lat1" ref="3 3"/>
       </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Gen 11:2-3"/>
+      <align>
+         <div-ref work="bhs" ref="Gen 11:2 - 3"/>
          <div-ref src="grc" ref="3 3"/>
       </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Gen 11:9"/>
+      <align>
+         <div-ref work="bhs" ref="Gen 11:9"/>
          <div-ref src="lat1" ref="3 3"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Gen 49:17-18"/>
-         <div-ref src="syr" ref="14 6"/>
+         <div-ref work="bhs" ref="Gen 49:17 - 18"/>
+         <div-ref work="syr" ref="14 6"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Gen 49:18"/>
-         <div-ref src="syr" ref="14 9"/>
+         <div-ref work="bhs" ref="Gen 49:18"/>
+         <div-ref work="syr" ref="14 9"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Deut 9:4-6"/>
-         <div-ref src="syr" ref="11 5"/>
-      </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Deut 19:18"/>
-         <div-ref src="lat1" ref="pr"/>
-      </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Deut 32:30"/>
-         <div-ref src="grc" ref="13 10"/>
+         <div-ref work="bhs" ref="Deut 9:4 - 6"/>
+         <div-ref work="syr" ref="11 5"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Josh 10:12-13"/>
-         <div-ref src="syr" ref="10 4"/>
+         <div-ref work="bhs" ref="Deut 32:30"/>
+         <div-ref work="grc" ref="13 10"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Judg 6:5"/>
-         <div-ref src="syr" ref="5 3; 11 13"/>
+         <div-ref work="bhs" ref="Josh 10:12 - 13"/>
+         <div-ref work="syr" ref="10 4"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Judg 7:12"/>
-         <div-ref src="syr" ref="5 3; 11 13"/>
+         <div-ref work="bhs" ref="Judg 6:5"/>
+         <div-ref work="bhs" ref="Judg 7:12"/>
+         <div-ref work="syr" ref="5 3"/>
+         <div-ref work="syr" ref="11 13"/>
       </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Judg 7:25"/>
+      <align>
+         <div-ref work="bhs" ref="Judg 7:25"/>
          <div-ref src="lat1" ref="5 6"/>
       </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Judg 8:3, 5-11"/>
+      <align>
+         <div-ref work="bhs" ref="Judg 8:3, Judg 8:5 - 11"/>
          <div-ref src="lat1" ref="5 6"/>
       </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="1Kgs 19:37"/>
+      <align>
+         <div-ref work="bhs" ref="2Kgs 19:37"/>
          <div-ref src="lat1" ref="6 3"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Ps 67:32"/>
-         <div-ref src="syr" ref="9 7; 9 8 ; 10 3; 14 5"/>
+         <div-ref work="lxx" ref="Ps 67:32"/>
+         <div-ref work="syr" ref="9 7"/>
+         <div-ref work="syr" ref="9 8"/>
+         <div-ref work="syr" ref="10 3"/>
+         <div-ref work="syr" ref="14 5"/>
       </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Ps 73:12"/>
+      <align>
+         <div-ref work="bhs" ref="Ps 73:12"/>
          <div-ref src="lat1" ref="9 8"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Ps 77:65"/>
-         <div-ref src="syr" ref="13 11"/>
+         <div-ref work="lxx" ref="Ps 77:65"/>
+         <div-ref work="syr" ref="13 11"/>
       </align>
-      <align exclusive="true">
-         <div-ref src="" ref="Ps 78(79):3"/>
-         <div-ref src="grc" ref="13 19; 13 20"/>
+      <align>
+         <div-ref work="bhs" ref="Ps 79:3"/>
+         <div-ref work="grc" ref="13 19"/>
       </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Ps 106:3"/>
+      <align>
+         <div-ref work="bhs" ref="Ps 79:3"/>
+         <div-ref src="grc" ref="13 20"/>
+      </align>
+      <align>
+         <div-ref work="bhs" ref="Ps 106:3"/>
          <div-ref src="lat1" ref="11 13"/>
       </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Isa 37,38"/>
+      <align>
+         <div-ref work="bhs" ref="Isa 37:38"/>
          <div-ref src="lat1" ref="6 3"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Mt 5:11-12"/>
-         <div-ref src="syr" ref="13 5"/>
+         <div-ref work="nt" ref="Mt 5:11 - 12"/>
+         <div-ref work="syr" ref="13 5"/>
       </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Mt 10:22"/>
+      <align>
+         <div-ref work="nt" ref="Mt 10:22"/>
          <div-ref src="grc" ref="13 5"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Mt 11:5"/>
-         <div-ref src="syr" ref="14 8"/>
-      </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Mt 11:21-23"/>
-         <div-ref src="cf. app. crit.)" ref="14 1"/>
+         <div-ref work="nt" ref="Mt 11:5"/>
+         <div-ref work="syr" ref="14 8"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Mt 13:39,40"/>
-         <div-ref src="syr" ref="10 6"/>
+         <div-ref work="nt" ref="Mt 11:21 - 23"/>
+         <div-ref work="grc" ref="14 1"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Mt 13:43"/>
-         <div-ref src="syr" ref="14 14"/>
+         <div-ref work="nt" ref="Mt 13:39 - 40"/>
+         <div-ref work="syr" ref="10 6"/>
       </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Mt 24:13"/>
+      <align>
+         <div-ref work="nt" ref="Mt 13:43"/>
+         <div-ref work="syr" ref="14 14"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="Mt 24:13"/>
          <div-ref src="grc" ref="13 5"/>
       </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Mt 24:19"/>
+      <align>
+         <div-ref work="nt" ref="Mt 24:19"/>
          <div-ref src="grc" ref="13 12"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Mt 24:21"/>
-         <div-ref src="syr" ref="13 15"/>
+         <div-ref work="nt" ref="Mt 24:21"/>
+         <div-ref work="syr" ref="13 15"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Mt 24:24"/>
-         <div-ref src="syr" ref="14 8; 14 9"/>
+         <div-ref work="nt" ref="Mt 24:24"/>
+         <div-ref work="syr" ref="14 8"/>
+         <div-ref work="syr" ref="14 9"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Mt 24:29"/>
-         <div-ref src="syr" ref="14 11"/>
+         <div-ref work="nt" ref="Mt 24:29"/>
+         <div-ref work="syr" ref="14 11"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Mt 24:30"/>
-         <div-ref src="syr" ref="14 13"/>
+         <div-ref work="nt" ref="Mt 24:30"/>
+         <div-ref work="syr" ref="14 13"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Mt 24:37-39"/>
-         <div-ref src="syr" ref="13 17"/>
+         <div-ref work="nt" ref="Mt 24:37 - 39"/>
+         <div-ref work="syr" ref="13 17"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Mt 24:38"/>
-         <div-ref src="syr" ref="13 18"/>
+         <div-ref work="nt" ref="Mt 24:38"/>
+         <div-ref work="syr" ref="13 18"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Mk 13:13"/>
-         <div-ref src="syr" ref="13 5"/>
+         <div-ref work="nt" ref="Mk 13:13"/>
+         <div-ref work="syr" ref="13 5"/>
       </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Mk 13:19-20"/>
+      <align>
+         <div-ref work="nt" ref="Mk 13:19 - 20"/>
          <div-ref src="grc" ref="13 15"/>
       </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Lu 7:22"/>
-         <div-ref src="cf. app. crit.); 14 8" ref="14 1"/>
-      </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Lu 18:8"/>
-         <div-ref src="cf. app. crit.)" ref="12 2"/>
+      <align>
+         <div-ref work="nt" ref="Lu 7:22"/>
+         <div-ref work="lat1" ref="14 1"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Ac 2:19-20"/>
-         <div-ref src="syr" ref="14 8"/>
-      </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Ac 9:1-22"/>
-         <div-ref src="lat1" ref="13 2"/>
-      </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Ac 17:26"/>
-         <div-ref src="grc" ref="11 3"/>
-      </align>
-      <align>
-         <div-ref src="bhs" ref="Ro 1:26"/>
-         <div-ref src="syr" ref="11, 6"/>
-      </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Ro 1:26"/>
-         <div-ref src="cf. app. crit.)" ref="11, 7"/>
-      </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Ro 1:29"/>
-         <div-ref src="lat1" ref="12 5"/>
-      </align>
-      <align>
-         <div-ref src="bhs" ref="Ro 1:31"/>
-         <div-ref src="syr" ref="12 7"/>
-      </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Ro 9:6"/>
-         <div-ref src="cf. app. crit.)" ref="12 1"/>
-      </align>
-      <align>
-         <div-ref src="bhs" ref="Ro 11:4"/>
-         <div-ref src="syr" ref="12 1"/>
-      </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Ro 14:1"/>
-         <div-ref src="grc" ref="12 6"/>
-      </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="1Co 3:3"/>
-         <div-ref src="lat1" ref="[Praef.]"/>
-      </align>
-      <align>
-         <div-ref src="bhs" ref="1Co 5:10-11"/>
-         <div-ref src="syr" ref="12 7"/>
-      </align>
-      <align>
-         <div-ref src="bhs" ref="1Co 6:9-10"/>
-         <div-ref src="syr" ref="12 7"/>
-      </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="1Co 10:11"/>
-         <div-ref src="lat1" ref="[Praef.]"/>
-      </align>
-      <align>
-         <div-ref src="bhs" ref="1Co 15:24"/>
-         <div-ref src="syr" ref="10 2"/>
-      </align>
-      <align>
-         <div-ref src="bhs" ref="1Co 15:24"/>
-         <div-ref src="syr" ref="10 3"/>
-      </align>
-      <align>
-         <div-ref src="bhs" ref="1Co 15:24"/>
-         <div-ref src="syr" ref="14 3"/>
-      </align>
-      <align>
-         <div-ref src="bhs" ref="1Co 15:24"/>
-         <div-ref src="syr" ref="14 6"/>
-      </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="Eph 1:21"/>
-         <div-ref src="grc" ref="10 2"/>
-      </align>
-      <align>
-         <div-ref src="bhs" ref="Eph 3:18"/>
-         <div-ref src="syr" ref="9 9"/>
-      </align>
-      <align>
-         <div-ref src="bhs" ref="1Th 5:3"/>
-         <div-ref src="syr" ref="13 17"/>
-      </align>
-      <align>
-         <div-ref src="bhs" ref="2Th 2:1-5"/>
-         <div-ref src="syr" ref="10 1"/>
-      </align>
-      <align>
-         <div-ref src="bhs" ref="2Th 2:3"/>
-         <div-ref src="syr" ref="11 17"/>
-      </align>
-      <align>
-         <div-ref src="bhs" ref="2Th 2:3"/>
-         <div-ref src="syr" ref="13 21"/>
-      </align>
-      <align>
-         <div-ref src="bhs" ref="2Th 2:3-4"/>
-         <div-ref src="syr" ref="14 10"/>
-      </align>
-      <align>
-         <div-ref src="bhs" ref="2Th 2:7-8"/>
-         <div-ref src="syr" ref="10 1"/>
-      </align>
-      <align>
-         <div-ref src="bhs" ref="2Th 2:8"/>
-         <div-ref src="syr" ref="14 13"/>
-      </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="2Th 2:9"/>
+         <div-ref work="nt" ref="Lu 7:22"/>
          <div-ref src="lat1" ref="14 8"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Phm 2:15-16"/>
-         <div-ref src="syr" ref="14 14"/>
+         <div-ref work="nt" ref="Lu 18:8"/>
+         <div-ref work="lat1" ref="12 2"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="1Tim l:10"/>
-         <div-ref src="syr" ref="12 7"/>
+         <div-ref work="nt" ref="Ac 2:19 - 20"/>
+         <div-ref work="syr" ref="14 8"/>
       </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="1Tim 4:l-2"/>
-         <div-ref src="cf. app. crit.)" ref="12 4"/>
+      <align>
+         <div-ref work="nt" ref="Ac 9:1 - 22"/>
+         <div-ref src="lat1" ref="13 2"/>
       </align>
-      <align exclusive="true">
-         <div-ref src="bhs" ref="2Tim 2:10"/>
+      <align>
+         <div-ref work="nt" ref="Ac 17:26"/>
+         <div-ref src="grc" ref="11 3"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="Ro 1:26"/>
+         <div-ref work="syr" ref="11 6"/>
+         <div-ref work="syr" ref="11 7"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="Ro 1:29"/>
+         <div-ref src="lat1" ref="12 5"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="Ro 1:31"/>
+         <div-ref work="syr" ref="12 7"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="Ro 9:6"/>
+         <div-ref work="lat1" ref="12 1"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="Ro 11:4"/>
+         <div-ref work="syr" ref="12 1"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="Ro 14:1"/>
+         <div-ref src="grc" ref="12 6"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="1Co 5:10 - 11"/>
+         <div-ref work="syr" ref="12 7"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="1Co 6:9 - 10"/>
+         <div-ref work="syr" ref="12 7"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="1Co 15:24"/>
+         <div-ref work="syr" ref="10 2"/>
+         <div-ref work="syr" ref="10 3"/>
+         <div-ref work="syr" ref="14 3"/>
+         <div-ref work="syr" ref="14 6"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="Eph 1:21"/>
+         <div-ref src="grc" ref="10 2"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="Eph 3:18"/>
+         <div-ref work="syr" ref="9 9"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="1Th 5:3"/>
+         <div-ref work="syr" ref="13 17"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="2Th 2:1 - 5"/>
+         <div-ref work="syr" ref="10 1"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="2Th 2:3"/>
+         <div-ref work="syr" ref="11 17"/>
+         <div-ref work="syr" ref="13 21"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="2Th 2:3 - 4"/>
+         <div-ref work="syr" ref="14 10"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="2Th 2:7 - 8"/>
+         <div-ref work="syr" ref="10 1"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="2Th 2:8"/>
+         <div-ref work="syr" ref="14 13"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="2Th 2:9"/>
+         <div-ref src="lat1" ref="14 8"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="Php 2:15 - 16"/>
+         <div-ref work="syr" ref="14 14"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="1Tim 1:10"/>
+         <div-ref work="syr" ref="12 7"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="1Tim 4:1 - 2"/>
+         <div-ref work="lat1" ref="12 4"/>
+      </align>
+      <align>
+         <div-ref work="nt" ref="2Tim 2:10"/>
          <div-ref src="lat1" ref="14 13"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="2Tim 3:1-5"/>
-         <div-ref src="syr" ref="12 5"/>
+         <div-ref work="nt" ref="2Tim 3:1 - 5"/>
+         <div-ref work="syr" ref="12 5"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="2Tim 3:2"/>
-         <div-ref src="syr" ref="12 7"/>
+         <div-ref work="nt" ref="2Tim 3:2"/>
+         <div-ref work="nt" ref="2Tim 3:3 - 4"/>
+         <div-ref work="nt" ref="2Tim 3:5"/>
+         <div-ref work="syr" ref="12 7"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="2Tim 3:3-4"/>
-         <div-ref src="syr" ref="12 7"/>
+         <div-ref work="nt" ref="Tit 3:4 - 6"/>
+         <div-ref work="syr" ref="14 14"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="2Tim 3:5"/>
-         <div-ref src="syr" ref="12 7"/>
+         <div-ref work="nt" ref="Jud 16"/>
+         <div-ref work="syr" ref="11 13"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Tit 3:4-6"/>
-         <div-ref src="syr" ref="14 14"/>
+         <div-ref work="nt" ref="Jud 25"/>
+         <div-ref work="syr" ref="14 14"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Jud 16"/>
-         <div-ref src="syr" ref="11 13"/>
+         <div-ref work="nt" ref="Re 5:9"/>
+         <div-ref work="nt" ref="Re 11:3 - 10"/>
+         <div-ref work="syr" ref="14 11"/>
       </align>
       <align>
-         <div-ref src="bhs" ref="Jud 25"/>
-         <div-ref src="syr" ref="14 14"/>
-      </align>
-      <align>
-         <div-ref src="bhs" ref="Re 5:9"/>
-         <div-ref src="syr" ref="14 11"/>
-      </align>
-      <align>
-         <div-ref src="bhs" ref="Re 11:3-10"/>
-         <div-ref src="syr" ref="14 11"/>
-      </align>
-      <align>
-         <div-ref src="bhs" ref="Re 11:3,7"/>
-         <div-ref src="syr" ref="14 12"/>
+         <div-ref work="nt" ref="Re 11:3, Re 11:7"/>
+         <div-ref work="syr" ref="14 12"/>
       </align>
    </body>
 </TAN-A-div>
