@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href ="../../TAN-2018/schemas/catalog.tan.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href ="../../TAN-2018/schemas/catalog.tan.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<collection stable="true">
+   <doc href="methodios.apoc.grc.1998.xml"
+        id="tag:kalvesmaki.com,2014:methodios-apoc:grc:1998"
+        root="TAN-T"/>
+   <doc href="methodios.apoc.lat.1998.xml"
+        id="tag:kalvesmaki.com,2014:methodios-apoc:lat:1998"
+        root="TAN-T"/>
+   <doc href="methodios.apoc.syr.1998.xml"
+        id="tag:kalvesmaki.com,2014:methodios-apoc:syr:1998"
+        root="TAN-T"/>
+   <doc href="TAN-A-div/bible-for-methodios.TAN-A-div.xml"
+        id="tag:kalvesmaki.com,2014:tan-a-div:bible:for-methodios"
+        root="TAN-A-div"/>
+   <doc href="TAN-A-div/methodios.apoc.TAN-A-div.xml"
+        id="tag:kalvesmaki.com,2014:methodios-apoc:grc:1998:TAN-A-div:2016-04-10T21:26:37.002-04:00"
+        root="TAN-A-div"/>
+</collection>

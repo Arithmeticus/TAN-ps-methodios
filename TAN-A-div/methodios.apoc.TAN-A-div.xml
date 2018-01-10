@@ -1,176 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../TAN-1-dev/schemas/TAN-A-div.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href="../../../TAN-1-dev/schemas/TAN-A-div.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TAN-A-div xmlns="tag:textalign.net,2015:ns"
-           TAN-version="1 dev"
-           id="tag:kalvesmaki.com,2014:methodios-apoc:grc:1998:TAN-A-div:2016-04-10T21:26:37.002-04:00">
+<?xml-model href="../../../TAN-2018/schemas/TAN-A-div.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../TAN-2018/schemas/TAN-A-div.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TAN-A-div xmlns="tag:textalign.net,2015:ns" TAN-version="2018" id="tag:kalvesmaki.com,2014:methodios-apoc:grc:1998:TAN-A-div:2016-04-10T21:26:37.002-04:00">
    <head>
       <name>Alignment file for The Apocalypse, written by pseudo-Methodius</name>
-      <rights-excluding-sources which="by-sa_4.0" rights-holder="kalvesmaki"/>
+      <license which="by_4.0"/>
+      <licensor who="kalvesmaki"/>
       <inclusion xml:id="bible">
          <IRI>tag:kalvesmaki.com,2014:tan-a-div:bible:for-methodios</IRI>
          <name>Alignment of versions of the Bible relevant to the apocalypse of
             pseudo-Methodios</name>
-         <location href="bible-for-methodios.TAN-A-div.xml"
-                   when-accessed="2016-05-27-04:00"/>
+         <location href="bible-for-methodios.TAN-A-div.xml" when-accessed="2016-05-27-04:00"/>
       </inclusion>
       <source xml:id="syr">
          <IRI>tag:kalvesmaki.com,2014:methodios-apoc:syr:1998</IRI>
          <name>Reinink's Syriac edition of the Apocalypse of pseudo-Methodios</name>
-         <location href="../methodios.apoc.syr.1998.xml"
-                   when-accessed="2016-04-10T21:26:37.002-04:00"/>
+         <location href="../methodios.apoc.syr.1998.xml" when-accessed="2016-04-10T21:26:37.002-04:00"/>
       </source>
       <source xml:id="grc">
          <IRI>tag:kalvesmaki.com,2014:methodios-apoc:grc:1998</IRI>
          <name>Aerts and Kortekaas's Greek edition of the Apocalypse of pseudo-Methodios</name>
-         <location href="../methodios.apoc.grc.1998.xml"
-                   when-accessed="2016-04-10T21:26:37.002-04:00"/>
+         <location href="../methodios.apoc.grc.1998.xml" when-accessed="2016-04-10T21:26:37.002-04:00"/>
       </source>
       <source xml:id="lat1">
          <IRI>tag:kalvesmaki.com,2014:methodios-apoc:lat:1998</IRI>
          <name>Aerts and Kortekaas's Latin edition of the Apocalypse of pseudo-Methodios</name>
-         <location href="../methodios.apoc.lat.1998.xml"
-                   when-accessed="2016-04-10T21:26:37.002-04:00"/>
+         <location href="../methodios.apoc.lat.1998.xml" when-accessed="2016-04-10T21:26:37.002-04:00"/>
       </source>
       <source include="bible"/>
-      <declarations>
-         <rename-div-ns include="bible"/>
+      <definitions>
          <verb xml:id="quotes" which="quotes"/>
-      </declarations>
-      <agent xml:id="stylesheet" roles="editor">
-         <IRI>tag:textalign.net,2015:stylesheet:create:tan-a-div-from-collection</IRI>
-         <name>TAN stylesheet to create a TAN-A-div file from a collection of TAN-T(EI) files</name>
-      </agent>
-      <agent xml:id="kalvesmaki" roles="transcriber editor">
-         <IRI>http://viaf.org/viaf/299582703</IRI>
-         <IRI>tag:kalvesmaki.com,2014:self</IRI>
-         <IRI>tag:kalvesmaki@gmail.com,2014:self</IRI>
-         <name xml:lang="eng">Joel Kalvesmaki</name>
-      </agent>
-      <role xml:id="transcriber">
-         <IRI>http://rdvocab.info/roles/transcriber</IRI>
-         <name>transcriber</name>
-      </role>
-      <role xml:id="editor">
-         <IRI>http://schema.org/editor</IRI>
-         <name xml:lang="eng">editor</name>
-      </role>
-      <change when="2016-04-10T21:26:37.002-04:00" who="stylesheet">Created file, using OCR as a
+         <person xml:id="xslt0">
+            <IRI>tag:textalign.net,2015:stylesheet:create:tan-a-div-from-collection</IRI>
+            <name>TAN stylesheet to create a TAN-A-div file from a collection of TAN-T(EI) files</name>
+         </person>
+         <person xml:id="kalvesmaki">
+            <IRI>http://viaf.org/viaf/299582703</IRI>
+            <IRI>tag:kalvesmaki.com,2014:self</IRI>
+            <IRI>tag:kalvesmaki@gmail.com,2014:self</IRI>
+            <name xml:lang="eng">Joel Kalvesmaki</name>
+         </person>
+         <algorithm xml:id="xslt1"><IRI>tag:textalign.net,2015:stylesheet:convert-tan2017-to-tan2018</IRI><name>Stylesheet to populate a TAN-A-div file from collections.</name><desc>Stylesheet at: ../../../TAN-2018/do%20things/convert/convert%20TAN%202017%20to%20TAN%202018.xsl</desc></algorithm>
+         <role xml:id="editor">
+            <IRI>http://schema.org/editor</IRI>
+            <name xml:lang="eng">editor</name>
+         </role>
+         <role xml:id="stylesheet" which="stylesheet"/>
+         <alias id="ot" idrefs="lxx bhs"/>
+      </definitions>
+      <alter include="bible"/>
+      <resp roles="editor" who="kalvesmaki"/>
+      <resp who="xslt1 xslt0" roles="stylesheet"/>
+      <change when="2016-04-10T21:26:37.002-04:00" who="xslt0">Created file, using OCR as a
          basis for the index.</change>
+      <change who="xslt1" when="2017-12-19T18:07:13.584-05:00">TAN file updated to 2018 schemas.</change>
       <comment when="2016-10-25" who="kalvesmaki">Index is based upon the one by Aerts and
          Kortekaas, ignoring those references that appeal exclusively to a version that is not
          encoded, i.e., the app. crit. and the Gall. Ps., and it excludes the Latin preface. The
          index also respects references that they regard as source-specific, but not trying (yet) to
          reconcile them with the Syriac version</comment>
+      <change when="2018-01-09" who="kalvesmaki">Updated in light of changes to TAN-A-div Bible alignment being used.</change>
    </head>
    <body claimant="kalvesmaki" verb="quotes">
-      <equate-works include="bible"/>
-      <realign include="bible"/>
-      <comment when="2016-10-25" who="kalvesmaki">The following realigns are because the Greek edition retains two parallel versions for these sections</comment>
-      <realign>
-         <anchor-div-ref src="syr" ref="8 5"/>
-         <div-ref src="grc" ref="8 5 1"/>
-      </realign>
-      <realign>
-         <anchor-div-ref src="syr" ref="8 5"/>
-         <div-ref src="grc" ref="8 5 2"/>
-      </realign>
-      <realign>
-         <anchor-div-ref src="syr" ref="8 6"/>
-         <div-ref src="grc" ref="8 6 1"/>
-      </realign>
-      <realign>
-         <anchor-div-ref src="syr" ref="8 6"/>
-         <div-ref src="grc" ref="8 6 2"/>
-      </realign>
       <claim>
          <subject work="syr" ref="2 3"/>
-         <object work="bhs" ref="Gen 6:4"/>
+         <object work="ot" ref="Gen 6:4"/>
       </claim>
       <claim>
          <subject src="lat1" ref="3 5"/>
-         <object work="bhs" ref="Gen 10:9-10"/>
+         <object work="ot" ref="Gen 10:9-10"/>
       </claim>
       <claim>
          <subject src="lat1" ref="3 3"/>
-         <object work="bhs" ref="Gen 11:2"/>
+         <object work="ot" ref="Gen 11:2"/>
       </claim>
       <claim>
          <subject src="grc" ref="3 3"/>
-         <object work="bhs" ref="Gen 11:2-3"/>
+         <object work="ot" ref="Gen 11:2-3"/>
       </claim>
       <claim>
          <subject src="lat1" ref="3 3"/>
-         <object work="bhs" ref="Gen 11:9"/>
+         <object work="ot" ref="Gen 11:9"/>
       </claim>
       <claim>
          <subject work="syr" ref="14 6"/>
-         <object work="bhs" ref="Gen 49:17-18"/>
+         <object work="ot" ref="Gen 49:17-18"/>
       </claim>
       <claim>
          <subject work="syr" ref="14 9"/>
-         <object work="bhs" ref="Gen 49:18"/>
+         <object work="ot" ref="Gen 49:18"/>
       </claim>
       <claim>
          <subject work="syr" ref="11 5"/>
-         <object work="bhs" ref="Deut 9:4-6"/>
+         <object work="ot" ref="Deut 9:4-6"/>
       </claim>
       <claim>
          <subject work="grc" ref="13 10"/>
-         <object work="bhs" ref="Deut 32:30"/>
+         <object work="ot" ref="Deut 32:30"/>
       </claim>
       <claim>
          <subject work="syr" ref="10 4"/>
-         <object work="bhs" ref="Josh 10:12-13"/>
+         <object work="ot" ref="Josh 10:12-13"/>
       </claim>
       <claim>
          <subject work="syr" ref="5 3"/>
          <subject work="syr" ref="11 13"/>
-         <object work="bhs" ref="Judg 6:5"/>
-         <object work="bhs" ref="Judg 7:12"/>
+         <object work="ot" ref="Judg 6:5"/>
+         <object work="ot" ref="Judg 7:12"/>
       </claim>
       <claim>
          <subject src="lat1" ref="5 6"/>
-         <object work="bhs" ref="Judg 7:25"/>
+         <object work="ot" ref="Judg 7:25"/>
       </claim>
       <claim>
          <subject src="lat1" ref="5 6"/>
-         <object work="bhs" ref="Judg 8:3, Judg 8:5-11"/>
+         <object work="ot" ref="Judg 8:3, 5-11"/>
       </claim>
       <claim>
          <subject src="lat1" ref="6 3"/>
-         <object work="bhs" ref="2Kgs 19:37"/>
+         <object work="ot" ref="2Kgs 19:37"/>
       </claim>
       <claim>
          <subject work="syr" ref="9 7"/>
          <subject work="syr" ref="9 8"/>
          <subject work="syr" ref="10 3"/>
          <subject work="syr" ref="14 5"/>
-         <object work="lxx" ref="Ps 67:32"/>
+         <object src="lxx" ref="Ps 68:32"/>
       </claim>
       <claim>
          <subject src="lat1" ref="9 8"/>
-         <object work="bhs" ref="Ps 73:12"/>
+         <object work="ot" ref="Ps 73:12"/>
       </claim>
       <claim>
          <subject work="syr" ref="13 11"/>
-         <object work="lxx" ref="Ps 77:65"/>
+         <object src="lxx" ref="Ps 78:65"/>
       </claim>
       <claim>
          <subject work="grc" ref="13 19"/>
-         <object work="bhs" ref="Ps 79:3"/>
+         <object work="ot" ref="Ps 79:3"/>
       </claim>
       <claim>
          <subject src="grc" ref="13 20"/>
-         <object work="bhs" ref="Ps 79:3"/>
+         <object work="ot" ref="Ps 79:3"/>
       </claim>
       <claim>
          <subject src="lat1" ref="11 13"/>
-         <object work="bhs" ref="Ps 106:3"/>
+         <object work="ot" ref="Ps 106:3"/>
       </claim>
       <claim>
          <subject src="lat1" ref="6 3"/>
-         <object work="bhs" ref="Isa 37:38"/>
+         <object work="ot" ref="Isa 37:38"/>
       </claim>
       <claim>
          <subject work="syr" ref="13 5"/>

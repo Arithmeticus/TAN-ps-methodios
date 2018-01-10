@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../TAN-1-dev/schemas/TAN-T.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href="../../TAN-1-dev/schemas/TAN-T.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--<?xml-model href="http://textalign.net/release/TAN-1-dev/schemas/TAN-T.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href="http://textalign.net/release/TAN-1-dev/schemas/TAN-T.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
-<TAN-T xmlns="tag:textalign.net,2015:ns" TAN-version="1 dev"
-   id="tag:kalvesmaki.com,2014:methodios-apoc:lat:1998">
+<?xml-model href="../../TAN-2018/schemas/TAN-T.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../TAN-2018/schemas/TAN-T.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--<?xml-model href="http://textalign.net/release/TAN-2018/schemas/TAN-T.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://textalign.net/release/TAN-2018/schemas/TAN-T.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TAN-T xmlns="tag:textalign.net,2015:ns" TAN-version="2018" id="tag:kalvesmaki.com,2014:methodios-apoc:lat:1998">
    <head>
       <name>Aerts and Kortekaas's Latin edition of the Apocalypse of pseudo-Methodios</name>
-      <rights-excluding-sources which="by-sa_4.0" rights-holder="kalvesmaki"/>
+      <license which="by-sa_4.0"/>
+      <licensor who="kalvesmaki"/>
       <source>
          <IRI>http://id.lib.harvard.edu/aleph/007886991/catalog</IRI>
          <IRI>https://lccn.loc.gov/98225073</IRI>
@@ -15,7 +15,7 @@
             Pseudo-Methodius : die ältesten griechischen und lateinischen Übersetzungen /
             herausgegeben von W.J. Aerts und G.A.A. Kortekaas. Lovanii : Peeters, 1998.</name>
       </source>
-      <declarations>
+      <definitions>
          <work>
             <IRI>http://dbpedia.org/resource/Apocalypse_of_Pseudo-Methodius</IRI>
             <name>The Apocalypse, written by pseudo-Methodius</name>
@@ -24,29 +24,34 @@
          <div-type xml:id="ch" which="chapter"/>
          <div-type xml:id="title" which="title"/>
          <div-type xml:id="exp" which="explicit"/>
-         <filter>
-            <normalization>
-               <IRI>urn:uuid:c5c9fa74-a8e8-4d07-8e26-5e042839ccda</IRI>
-               <name>Removed editorial angle brackets and parentheses</name>
-            </normalization>
-            <normalization which="no hyphens"/>
-         </filter>
-      </declarations>
-      <agent xml:id="kalvesmaki" roles="transcriber editor">
-         <IRI>http://viaf.org/viaf/299582703</IRI>
-         <IRI>tag:kalvesmaki.com,2014:self</IRI>
-         <IRI>tag:kalvesmaki@gmail.com,2014:self</IRI>
-         <name xml:lang="eng">Joel Kalvesmaki</name>
-      </agent>
-      <role xml:id="editor">
-         <IRI>http://schema.org/editor</IRI>
-         <name>editor</name>
-      </role>
-      <role xml:id="transcriber">
-         <IRI>http://rdvocab.info/roles/transcriber</IRI>
-         <name>transcriber</name>
-      </role>
+         <person xml:id="kalvesmaki">
+            <IRI>http://viaf.org/viaf/299582703</IRI>
+            <IRI>tag:kalvesmaki.com,2014:self</IRI>
+            <IRI>tag:kalvesmaki@gmail.com,2014:self</IRI>
+            <name xml:lang="eng">Joel Kalvesmaki</name>
+         </person>
+         <algorithm xml:id="xslt1"><IRI>tag:textalign.net,2015:stylesheet:convert-tan2017-to-tan2018</IRI><name>Stylesheet to populate a TAN-A-div file from collections.</name><desc>Stylesheet at: ../../TAN-2018/do%20things/convert/convert%20TAN%202017%20to%20TAN%202018.xsl</desc></algorithm>
+         <role xml:id="editor">
+            <IRI>http://schema.org/editor</IRI>
+            <name>editor</name>
+         </role>
+         <role xml:id="transcriber">
+            <IRI>http://rdvocab.info/roles/transcriber</IRI>
+            <name>transcriber</name>
+         </role>
+         <role xml:id="stylesheet" which="stylesheet"/>
+      </definitions>
+      <alter>
+         <normalization>
+            <IRI>urn:uuid:c5c9fa74-a8e8-4d07-8e26-5e042839ccda</IRI>
+            <name>Removed editorial angle brackets and parentheses</name>
+         </normalization>
+         <normalization which="no hyphens"/>
+      </alter>
+      <resp roles="transcriber editor" who="kalvesmaki"/>
+      <resp who="xslt1" roles="stylesheet"/>
       <change when="2016-04-06" who="kalvesmaki">Started TAN file</change>
+      <change who="xslt1" when="2017-12-19T18:04:32.023-05:00">TAN file updated to 2018 schemas.</change>
    </head>
    <body xml:lang="lat" ed-when="2016-04-05-04:00" ed-who="kalvesmaki">
       <div n="title" type="title">INCIPIT SANCTI METHODII EPISCOPI PATERENSIS SERMO DE REGNUM
