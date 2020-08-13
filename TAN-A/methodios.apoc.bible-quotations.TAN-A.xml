@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../TAN-2020/schemas/TAN-A-div.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../TAN-2020/schemas/TAN-A-div.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TAN-A xmlns="tag:textalign.net,2015:ns" TAN-version="2020" id="tag:kalvesmaki.com,2014:methodios-apoc:tan-a:methodios-and-bible-quotations">
+   <head>
+      <name>Bible quotations in The Apocalypse, written by pseudo-Methodius</name>
+      <license which="by_4.0" licensor="kalvesmaki"/>
+      <inclusion xml:id="ot">
+         <IRI>tag:kalvesmaki.com,2014:tanakh.TAN-A</IRI>
+         <name>Div-based alignment of multiple versions of the Tanakh</name>
+         <location href="../../bible/TAN-A/tanakh.TAN-A.xml" accessed-when="2016-05-27T14:56:51.64-04:00"/>
+      </inclusion>
+      <source xml:id="syr">
+         <IRI>tag:kalvesmaki.com,2014:methodios-apoc:syr:1998</IRI>
+         <name>Reinink's Syriac edition of the Apocalypse of pseudo-Methodios</name>
+         <location href="../methodios.apoc.syr.1998.xml" accessed-when="2016-04-10T21:26:37.002-04:00"/>
+      </source>
+      <source xml:id="grc">
+         <IRI>tag:kalvesmaki.com,2014:methodios-apoc:grc:1998</IRI>
+         <name>Aerts and Kortekaas's Greek edition of the Apocalypse of pseudo-Methodios</name>
+         <location href="../methodios.apoc.grc.1998.xml" accessed-when="2016-04-10T21:26:37.002-04:00"/>
+      </source>
+      <source xml:id="lat1">
+         <IRI>tag:kalvesmaki.com,2014:methodios-apoc:lat:1998</IRI>
+         <name>Aerts and Kortekaas's Latin edition of the Apocalypse of pseudo-Methodios</name>
+         <location href="../methodios.apoc.lat.1998.xml" accessed-when="2016-04-10T21:26:37.002-04:00"/>
+      </source>
+      <source xml:id="lxx" which="lxx grc" accessed-when="2020-07-23"/>
+      <source xml:id="ot" which="ot heb" accessed-when="2020-07-23"/>
+      <source xml:id="nt" which="nt grc" accessed-when="2020-07-23"/>
+      <vocabulary>
+         <IRI>tag:kalvesmaki.com,2014:tan-voc:ps-methodios</IRI>
+         <name>General keywords associated with the pseudo-Methodios TAN collection</name>
+         <location accessed-when="2020-03-09T04:12:46.89-04:00" href="../TAN-voc/ps-methodios.TAN-voc.xml"/>
+      </vocabulary>
+      <adjustments include="ot"/>
+      <vocabulary-key>
+         <algorithm xml:id="xslt2">
+            <IRI>tag:textalign.net,2015:stylesheet:convert-tan2018-to-tan2020</IRI>
+            <name>Converter from TAN 2018 to TAN 2020</name>
+            <location href="../../applications/convert/convert%20TAN%202018%20to%20TAN%202020.xsl" accessed-when="2020-03-09T04:18:52.489-04:00"/>
+         </algorithm>
+      
+         <algorithm xml:id="xslt0">
+            <IRI>tag:textalign.net,2015:stylesheet:create:tan-a-div-from-collection</IRI>
+            <name>TAN stylesheet to create a TAN-A-div file from a collection of TAN-T(EI) files</name>
+            <location
+               href="../../applications/convert/convert%20TAN%202017%20to%20TAN%202018.xsl"
+               accessed-when="2020-03-09"/>
+         </algorithm>
+         <algorithm xml:id="xslt1">
+            <IRI>tag:textalign.net,2015:stylesheet:convert-tan2017-to-tan2018</IRI>
+            <name>Stylesheet to populate a TAN-A-div file from collections.</name>
+            <location
+               href="../../applications/convert/convert%20TAN%202017%20to%20TAN%202018.xsl"
+               accessed-when="2020-03-09"/>
+         </algorithm>
+         <!--<alias id="ot" idrefs="lxx"/>-->
+      </vocabulary-key>
+      
+      <file-resp who="kalvesmaki"/>
+      <resp roles="editor" who="kalvesmaki"/>
+      <resp roles="stylesheet" who="xslt1 xslt0 xslt2"/>
+      <change when="2016-04-10T21:26:37.002-04:00" who="xslt0">Created file, using OCR as a
+         basis for the index.</change>
+      <change who="xslt1" when="2017-12-19T18:07:13.584-05:00">TAN file updated to 2018 schemas.</change>
+      <comment when="2016-10-25" who="kalvesmaki">Index is based upon the one by Aerts and
+         Kortekaas, ignoring those references that appeal exclusively to a version that is not
+         encoded, i.e., the app. crit. and the Gall. Ps., and it excludes the Latin preface. The
+         index also respects references that they regard as source-specific, but not trying (yet) to
+         reconcile them with the Syriac version</comment>
+      <change when="2018-01-09" who="kalvesmaki">Updated in light of changes to TAN-A-div Bible alignment being used.</change>
+      <change who="xslt2" when="2020-03-09T04:18:52.489-04:00">Converted from 2018 to 2020 schemas.</change>
+      <change when="2020-07-23" who="kalvesmaki">Added @accessed-when, added OT adjustments to refs</change>
+      <to-do>
+         <comment when="2020-07-23" who="kalvesmaki">Claims need to be proofread.</comment>
+      </to-do>
+   </head>
+   <body claimant="kalvesmaki" verb="quotes">
+      <claim>
+         <subject work="syr" ref="2 3"/>
+         <object work="ot" ref="Gen 6:4"/>
+      </claim>
+      <claim>
+         <subject src="lat1" ref="3 5"/>
+         <object work="ot" ref="Gen 10:9-10"/>
+      </claim>
+      <claim>
+         <subject src="lat1" ref="3 3"/>
+         <object work="ot" ref="Gen 11:2"/>
+      </claim>
+      <claim>
+         <subject src="grc" ref="3 3"/>
+         <object work="ot" ref="Gen 11:2-3"/>
+      </claim>
+      <claim>
+         <subject src="lat1" ref="3 3"/>
+         <object work="ot" ref="Gen 11:9"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="14 6"/>
+         <object work="ot" ref="Gen 49:17-18"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="14 9"/>
+         <object work="ot" ref="Gen 49:18"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="11 5"/>
+         <object work="ot" ref="Deut 9:4-6"/>
+      </claim>
+      <claim>
+         <subject work="grc" ref="13 10"/>
+         <object work="ot" ref="Deut 32:30"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="10 4"/>
+         <object work="ot" ref="Josh 10:12-13"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="5 3"/>
+         <subject work="syr" ref="11 13"/>
+         <object work="ot" ref="Judg 6:5"/>
+         <object work="ot" ref="Judg 7:12"/>
+      </claim>
+      <claim>
+         <subject src="lat1" ref="5 6"/>
+         <object work="ot" ref="Judg 7:25"/>
+      </claim>
+      <claim>
+         <subject src="lat1" ref="5 6"/>
+         <object work="ot" ref="Judg 8:3, 5-11"/>
+      </claim>
+      <claim>
+         <subject src="lat1" ref="6 3"/>
+         <object work="ot" ref="2Kgs 19:37"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="9 7"/>
+         <subject work="syr" ref="9 8"/>
+         <subject work="syr" ref="10 3"/>
+         <subject work="syr" ref="14 5"/>
+         <object src="lxx" ref="Ps 68:32"/>
+      </claim>
+      <claim>
+         <subject src="lat1" ref="9 8"/>
+         <object work="ot" ref="Ps 73:12"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="13 11"/>
+         <object src="lxx" ref="Ps 78:65"/>
+      </claim>
+      <claim>
+         <subject work="grc" ref="13 19"/>
+         <object work="ot" ref="Ps 79:3"/>
+      </claim>
+      <claim>
+         <subject src="grc" ref="13 20"/>
+         <object work="ot" ref="Ps 79:3"/>
+      </claim>
+      <claim>
+         <subject src="lat1" ref="11 13"/>
+         <object work="ot" ref="Ps 106:3"/>
+      </claim>
+      <claim>
+         <subject src="lat1" ref="6 3"/>
+         <object work="ot" ref="Isa 37:38"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="13 5"/>
+         <object work="nt" ref="Mt 5:11-12"/>
+      </claim>
+      <claim>
+         <subject src="grc" ref="13 5"/>
+         <object work="nt" ref="Mt 10:22"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="14 8"/>
+         <object work="nt" ref="Mt 11:5"/>
+      </claim>
+      <claim>
+         <subject work="grc" ref="14 1"/>
+         <object work="nt" ref="Mt 11:21-23"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="10 6"/>
+         <object work="nt" ref="Mt 13:39-40"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="14 14"/>
+         <object work="nt" ref="Mt 13:43"/>
+      </claim>
+      <claim>
+         <subject src="grc" ref="13 5"/>
+         <object work="nt" ref="Mt 24:13"/>
+      </claim>
+      <claim>
+         <subject src="grc" ref="13 12"/>
+         <object work="nt" ref="Mt 24:19"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="13 15"/>
+         <object work="nt" ref="Mt 24:21"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="14 8"/>
+         <subject work="syr" ref="14 9"/>
+         <object work="nt" ref="Mt 24:24"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="14 11"/>
+         <object work="nt" ref="Mt 24:29"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="14 13"/>
+         <object work="nt" ref="Mt 24:30"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="13 17"/>
+         <object work="nt" ref="Mt 24:37-39"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="13 18"/>
+         <object work="nt" ref="Mt 24:38"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="13 5"/>
+         <object work="nt" ref="Mk 13:13"/>
+      </claim>
+      <claim>
+         <subject src="grc" ref="13 15"/>
+         <object work="nt" ref="Mk 13:19-20"/>
+      </claim>
+      <claim>
+         <subject work="lat1" ref="14 1"/>
+         <object work="nt" ref="Lu 7:22"/>
+      </claim>
+      <claim>
+         <subject src="lat1" ref="14 8"/>
+         <object work="nt" ref="Lu 7:22"/>
+      </claim>
+      <claim>
+         <subject work="lat1" ref="12 2"/>
+         <object work="nt" ref="Lu 18:8"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="14 8"/>
+         <object work="nt" ref="Ac 2:19-20"/>
+      </claim>
+      <claim>
+         <subject src="lat1" ref="13 2"/>
+         <object work="nt" ref="Ac 9:1-22"/>
+      </claim>
+      <claim>
+         <subject src="grc" ref="11 3"/>
+         <object work="nt" ref="Ac 17:26"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="11 6"/>
+         <subject work="syr" ref="11 7"/>
+         <object work="nt" ref="Ro 1:26"/>
+      </claim>
+      <claim>
+         <subject src="lat1" ref="12 5"/>
+         <object work="nt" ref="Ro 1:29"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="12 7"/>
+         <object work="nt" ref="Ro 1:31"/>
+      </claim>
+      <claim>
+         <subject work="lat1" ref="12 1"/>
+         <object work="nt" ref="Ro 9:6"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="12 1"/>
+         <object work="nt" ref="Ro 11:4"/>
+      </claim>
+      <claim>
+         <subject src="grc" ref="12 6"/>
+         <object work="nt" ref="Ro 14:1"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="12 7"/>
+         <object work="nt" ref="1Co 5:10-11"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="12 7"/>
+         <object work="nt" ref="1Co 6:9-10"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="10 2"/>
+         <subject work="syr" ref="10 3"/>
+         <subject work="syr" ref="14 3"/>
+         <subject work="syr" ref="14 6"/>
+         <object work="nt" ref="1Co 15:24"/>
+      </claim>
+      <claim>
+         <subject src="grc" ref="10 2"/>
+         <object work="nt" ref="Eph 1:21"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="9 9"/>
+         <object work="nt" ref="Eph 3:18"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="13 17"/>
+         <object work="nt" ref="1Th 5:3"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="10 1"/>
+         <object work="nt" ref="2Th 2:1-5"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="11 17"/>
+         <subject work="syr" ref="13 21"/>
+         <object work="nt" ref="2Th 2:3"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="14 10"/>
+         <object work="nt" ref="2Th 2:3-4"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="10 1"/>
+         <object work="nt" ref="2Th 2:7-8"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="14 13"/>
+         <object work="nt" ref="2Th 2:8"/>
+      </claim>
+      <claim>
+         <subject src="lat1" ref="14 8"/>
+         <object work="nt" ref="2Th 2:9"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="14 14"/>
+         <object work="nt" ref="Php 2:15-16"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="12 7"/>
+         <object work="nt" ref="1Tim 1:10"/>
+      </claim>
+      <claim>
+         <subject work="lat1" ref="12 4"/>
+         <object work="nt" ref="1Tim 4:1-2"/>
+      </claim>
+      <claim>
+         <subject src="lat1" ref="14 13"/>
+         <object work="nt" ref="2Tim 2:10"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="12 5"/>
+         <object work="nt" ref="2Tim 3:1-5"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="12 7"/>
+         <object work="nt" ref="2Tim 3:2"/>
+         <object work="nt" ref="2Tim 3:3-4"/>
+         <object work="nt" ref="2Tim 3:5"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="14 14"/>
+         <object work="nt" ref="Tit 3:4-6"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="11 13"/>
+         <object work="nt" ref="Jud 16"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="14 14"/>
+         <object work="nt" ref="Jud 25"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="14 11"/>
+         <object work="nt" ref="Re 5:9"/>
+         <object work="nt" ref="Re 11:3-10"/>
+      </claim>
+      <claim>
+         <subject work="syr" ref="14 12"/>
+         <object work="nt" ref="Re 11:3, Re 11:7"/>
+      </claim>
+   </body>
+</TAN-A>

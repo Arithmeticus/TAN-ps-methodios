@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../TAN-2020/schemas/TAN-voc.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../TAN-2020/schemas/TAN-voc.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TAN-voc xmlns="tag:textalign.net,2015:ns" id="tag:kalvesmaki.com,2014:tan-voc:ps-methodios" TAN-version="2020">
+    <head>
+        <name>General keywords associated with the pseudo-Methodios TAN collection</name>
+        <license which="by 4.0" licensor="kalvesmaki"/>
+        <vocabulary-key>
+        </vocabulary-key>
+        <file-resp who="kalvesmaki"/>
+        <resp who="kalvesmaki" roles="editor"/>
+        <change when="2017-12-15T15:35:20.202-05:00" who="kalvesmaki">started file</change>
+        <to-do>
+            <comment when="2018-08-10" who="kalvesmaki">File needs to be checked.</comment>
+        </to-do>
+    </head>
+    <body affects-element="person">
+        <group affects-element="person">
+            <item>
+                <IRI>http://viaf.org/viaf/299582703</IRI>
+                <IRI>tag:kalvesmaki.com,2014:self</IRI>
+                <IRI>tag:kalvesmaki@gmail.com,2014:self</IRI>
+                <name>Joel Kalvesmaki</name>
+                <name>kalvesmaki</name>
+            </item>
+            <item>
+                <IRI>http://viaf.org/viaf/91030142</IRI>
+                <name>Aaron Butts</name>
+                <name>butts</name>
+            </item>
+        </group>
+        <group affects-element="source">
+            <comment when="2020-03-08" who="kalvesmaki">Moving sources from inclusion to vocabulary.</comment>
+            <item>
+                <IRI>tag:kalvesmaki.com,2014:bible.ot.lat.vulgata-clementina.2005</IRI>
+                <name>Old Testament, Latin: Vulgata Clementina</name>
+                <name>ot-lat-vc</name>
+                <location href="../../bible/ot.lat.vulgata-clementina.2005.xml" accessed-when="2016-05-26T05:40:22.232-04:00"/>
+            </item>
+            <item>
+                <IRI>tag:kalvesmaki.com,2014:lxx-grc-1979-rahlfs.TAN-T.001</IRI>
+                <name>Greek Septuagint, Rahlfs's edition</name>
+                <name>lxx-grc</name>
+                <location href="../../bible%20test/lxx.grc.rahlfs.xml" accessed-when="2018-09-02"/>
+                <location href="../../bible/lxx.grc.rahlfs.xml" accessed-when="2018-09-02"/>
+            </item>
+            <item>
+                <IRI>tag:kalvesmaki.com,2014:tanakh.hbo.bhs.1993</IRI>
+                <name>Hebrew OT: BHS (Consonants &amp; Vowels)</name>
+                <name>ot-heb</name>
+                <location href="../../bible%20test/tanakh.hbo.bhs.1987.xml" accessed-when="2015-10-12-04:00"/>
+                <location href="../../bible%20test/tanakh.hbo.bhs.1987.xml" accessed-when="2015-10-12-04:00"/>
+            </item>
+            <item>
+                <IRI>tag:kalvesmaki.com,2014:nt-grc-2010-sbl.TAN-T.001</IRI>
+                <name>SBL's Greek New Testament</name>
+                <name>nt-grc</name>
+                <location href="../../bible%20test/nt.grc.sbl-2010.xml" accessed-when="2015-08-08-04:00"/>
+                <location href="../../bible/nt.grc.sbl-2010.xml" accessed-when="2015-08-08-04:00"/>
+            </item>
+        </group>
+        <group affects-element="work">
+            <item>
+                <IRI>http://dbpedia.org/resource/Categories_(Aristotle)</IRI>
+                <name xml:lang="grc">Ἀριστοτέλης, Κατηγορίαι</name>
+                <name xml:lang="eng">Aristotle, Categories</name>
+            </item>
+        </group>
+    </body>
+</TAN-voc>

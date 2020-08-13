@@ -1,26 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../TAN-2018/schemas/TAN-T.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href="../../TAN-2018/schemas/TAN-T.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--<?xml-model href="http://textalign.net/release/TAN-2018/schemas/TAN-T.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href="http://textalign.net/release/TAN-2018/schemas/TAN-T.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
-<TAN-T xmlns="tag:textalign.net,2015:ns" TAN-version="2018" id="tag:kalvesmaki.com,2014:methodios-apoc:syr:1998">
+<?xml-model href="../../TAN-2020/schemas/TAN-T.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../TAN-2020/schemas/TAN-T.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--<?xml-model href="http://textalign.net/release/TAN-2020/schemas/TAN-T.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://textalign.net/release/TAN-2020/schemas/TAN-T.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TAN-T xmlns="tag:textalign.net,2015:ns" TAN-version="2020" id="tag:kalvesmaki.com,2014:methodios-apoc:syr:1998">
    <head>
       <name>Reinink's Syriac edition of the Apocalypse of pseudo-Methodios</name>
-      <license which="by-nc_3.0"/>
-      <licensor who="cpart"/>
+      <license which="by-nc_3.0" licensor="cpart"/>
+      <work>
+         <IRI>http://dbpedia.org/resource/Apocalypse_of_Pseudo-Methodius</IRI>
+         <name>The Apocalypse, written by pseudo-Methodius</name>
+      </work>
       <source>
          <IRI>http://id.lib.harvard.edu/aleph/006221849/catalog</IRI>
          <IRI>https://lccn.loc.gov/95115357</IRI>
          <name>G. J. Reinink, Die syrische Apokalypse des Pseudo-Methodius (CSCO 540–541; 1993).</name>
       </source>
-      <definitions>
-         <work>
-            <IRI>http://dbpedia.org/resource/Apocalypse_of_Pseudo-Methodius</IRI>
-            <name>The Apocalypse, written by pseudo-Methodius</name>
-         </work>
+      <vocabulary>
+         <IRI>tag:kalvesmaki.com,2014:tan-voc:ps-methodios</IRI>
+         <name>General keywords associated with the pseudo-Methodios TAN collection</name>
+         <location accessed-when="2020-03-09T04:12:46.89-04:00" href="TAN-voc/ps-methodios.TAN-voc.xml"/>
+      </vocabulary>
+      <adjustments>
+         <normalization>
+            <IRI>urn:uuid:3ca7ded7-9905-4d35-8bb3-8f248fe098b1</IRI>
+            <name>Removed page break locators</name>
+            <desc>Restricted divisions exclusively to semantic milestones.</desc>
+         </normalization>
+      </adjustments>
+      <vocabulary-key>
+         <algorithm xml:id="xslt2">
+            <IRI>tag:textalign.net,2015:stylesheet:convert-tan2018-to-tan2020</IRI>
+            <name>Converter from TAN 2018 to TAN 2020</name>
+            <location href="../../TAN-2020/applications/convert/convert%20TAN%202018%20to%20TAN%202020.xsl" accessed-when="2020-03-09T03:47:25.625-04:00"/>
+         </algorithm>
+      
          <div-type xml:id="sec" which="section"/>
          <div-type xml:id="ch" which="chapter"/>
-         <div-type xml:id="title" which="title"/>
          <person xml:id="cpart">
             <IRI>urn:uuid:c220da67-a4fb-4bd0-8ab0-1fef15dc7386</IRI>
             <name>CPART</name>
@@ -30,44 +46,21 @@
             Sea Scrolls. These projects provide access to primary resources for the study of ancient
             religious texts. http://cpart.mi.byu.edu</desc>
          </person>
-         <person xml:id="butts">
-            <IRI>http://viaf.org/viaf/91030142</IRI>
-            <name>Aaron Butts</name>
-         </person>
-         <person xml:id="kalvesmaki">
-            <IRI>http://viaf.org/viaf/299582703</IRI>
-            <IRI>tag:kalvesmaki.com,2014:self</IRI>
-            <IRI>tag:kalvesmaki@gmail.com,2014:self</IRI>
-            <name xml:lang="eng">Joel Kalvesmaki</name>
-         </person>
-         <algorithm xml:id="xslt1"><IRI>tag:textalign.net,2015:stylesheet:convert-tan2017-to-tan2018</IRI><name>Stylesheet to populate a TAN-A-div file from collections.</name><desc>Stylesheet at: ../../TAN-2018/do%20things/convert/convert%20TAN%202017%20to%20TAN%202018.xsl</desc></algorithm>
-         <role xml:id="sponsor">
-            <IRI>http://rdvocab.info/roles/sponsoringBody</IRI>
-            <name>sponsor</name>
-         </role>
-         <role xml:id="editor">
-            <IRI>http://schema.org/editor</IRI>
-            <name>editor</name>
-         </role>
-         <role xml:id="transcriber">
-            <IRI>http://rdvocab.info/roles/transcriber</IRI>
-            <name>transcriber</name>
-         </role>
-         <role xml:id="stylesheet" which="stylesheet"/>
-      </definitions>
-      <alter>
-         <normalization>
-            <IRI>urn:uuid:3ca7ded7-9905-4d35-8bb3-8f248fe098b1</IRI>
-            <name>Removed page break locators</name>
-            <desc>Restricted divisions exclusively to semantic milestones.</desc>
-         </normalization>
-      </alter>
+         <algorithm xml:id="xslt1"><IRI>tag:textalign.net,2015:stylesheet:convert-tan2017-to-tan2018</IRI><name>Stylesheet to populate a TAN-A-div file from collections.</name><desc>Stylesheet at: ../../TAN-2018/do%20things/convert/convert%20TAN%202017%20to%20TAN%202018.xsl</desc>
+            <location href="../../TAN-2020/applications/convert/convert%20TAN%202017%20to%20TAN%202018.xsl" accessed-when="2020-03-09"/></algorithm>
+      </vocabulary-key>
+      
+      <file-resp who="kalvesmaki"/>
       <resp roles="sponsor" who="cpart"/>
       <resp roles="transcriber editor" who="butts"/>
       <resp roles="editor" who="kalvesmaki"/>
-      <resp who="xslt1" roles="stylesheet"/>
+      <resp roles="stylesheet" who="xslt1 xslt2"/>
       <change when="2016-04-05" who="kalvesmaki">Started TAN file</change>
       <change who="xslt1" when="2017-12-19T18:04:33.136-05:00">TAN file updated to 2018 schemas.</change>
+      <change who="xslt2" when="2020-03-09T03:47:25.625-04:00">Converted from 2018 to 2020 schemas.</change>
+      <to-do>
+         <comment who="xslt1" when="2017-12-19T18:04:33.136-05:00">File is still in progress.</comment>
+      </to-do>
    </head>
    <body xml:lang="syr" ed-when="2016-04-05-04:00" ed-who="kalvesmaki">
       <div n="title" type="title">ܒܝܕ ܐܠܗܐ ܡܪܐ ܟܠ ܟܬܒܝܢܢ ܡܐܡܪܐ ܕܥܒܝܕ ܠܛܘܒܢܐ ܡܪܝ ܡܐܬܐܕܝܘܣ ܐܦܝܣܩܘܦܐ

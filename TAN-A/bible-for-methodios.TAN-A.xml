@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../TAN-2020/schemas/TAN-A-div.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../TAN-2020/schemas/TAN-A-div.sch" 
+   type="application/xml"xschematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--<?xml-model href="../../../TAN-2020/schemas/TAN-A-div.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<!--<?xml-model href="http://textalign.net/release/TAN-2020/schemas/TAN-A-div.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://textalign.net/release/TAN-2020/schemas/TAN-A-div.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TAN-A xmlns="tag:textalign.net,2015:ns" TAN-version="2020" id="tag:kalvesmaki.com,2014:tan-a-div:bible:for-methodios">
+   <head>
+      <name>Alignment of versions of the Bible relevant to the apocalypse of pseudo-Methodios</name>
+      <license which="by_4.0" licensor="kalvesmaki"/>
+      <inclusion xml:id="ot">
+         <IRI>tag:kalvesmaki.com,2014:tanakh.TAN-A</IRI>
+         <name>Div-based alignment of multiple versions of the Tanakh</name>
+         <location href="../../bible/TAN-A/tanakh.TAN-A.xml" accessed-when="2016-05-27T14:56:51.64-04:00"/>
+      </inclusion>
+      <source include="ot"/>
+      <source xml:id="ot-lat">
+         <IRI>tag:kalvesmaki.com,2014:bible.ot.lat.vulgata-clementina.2005</IRI>
+         <name>Old Testament, Latin: Vulgata Clementina</name>
+         <location href="../../bible/ot.lat.vulgata-clementina.2005.xml" accessed-when="2016-05-26T05:40:22.232-04:00"/>
+      </source>
+      <source xml:id="nt">
+         <IRI>tag:kalvesmaki.com,2014:nt-grc-2010-sbl.TAN-T.001</IRI>
+         <name>SBL's Greek New Testament</name>
+         <location href="../../bible/nt.grc.sbl-2010.xml" accessed-when="2015-08-08-04:00"/>
+         <!--<location
+            href="https://raw.githubusercontent.com/Arithmeticus/TAN-bible/master/nt.grc.sbl-2010.xml"
+            when-accessed="2015-08-08-04:00"/>-->
+      </source>
+      <source xml:id="nt-syr">
+         <IRI>tag:kalvesmaki.com,2014:nt-syr-1905-BFBS</IRI>
+         <name>1905 Bible Society Syriac New Testament</name>
+         <location href="../../bible/nt.syr.bfbs-1905.xml" accessed-when="2015-08-08-04:00"/>
+         <!--<location
+            href="https://raw.githubusercontent.com/Arithmeticus/TAN-bible/master/nt.syr.bfbs-1905.xml"
+            when-accessed="2015-08-08-04:00"/>-->
+      </source>
+      <source xml:id="nt-lat">
+         <IRI>tag:kalvesmaki.com,2014:bible.nt.lat.vulgata-clementina.2005</IRI>
+         <name>New Testament, Latin: Vulgata Clementina</name>
+         <location href="../../bible/nt.lat.vulgata-clementina.2005.xml" accessed-when="2016-05-26T05:34:26.718-04:00"/>
+      </source>
+      <vocabulary>
+         <IRI>tag:kalvesmaki.com,2014:tan-voc:ps-methodios</IRI>
+         <name>General keywords associated with the pseudo-Methodios TAN collection</name>
+         <location accessed-when="2020-03-09T04:12:46.89-04:00" href="../TAN-voc/ps-methodios.TAN-voc.xml"/>
+      </vocabulary>
+      <adjustments src="nt-lat">
+         <rename n="Matt" new="Mt"/>
+         <rename n="Mark" new="Mk"/>
+         <rename n="Luke" new="Lu"/>
+         <rename n="John" new="Jn"/>
+         <rename n="Acts" new="Ac"/>
+         <rename n="Rom" new="Ro"/>
+         <rename n="1Cor" new="1Co"/>
+         <rename n="2Cor" new="2Co"/>
+         <rename n="Phil" new="Php"/>
+         <rename n="1Thess" new="1Th"/>
+         <rename n="2Thess" new="2Th"/>
+         <rename n="Titus" new="Tit"/>
+         <rename n="Phlm" new="Phm"/>
+         <rename n="Jas" new="Jam"/>
+         <rename n="1Pet" new="1Pe"/>
+         <rename n="2Pet" new="2Pe"/>
+         <rename n="1John" new="1Jn"/>
+         <rename n="2John" new="2Jn"/>
+         <rename n="3John" new="3Jn"/>
+         <rename n="Jude" new="Jud"/>
+         <rename n="Rev" new="Re"/>
+      </adjustments>
+      <adjustments include="ot"/>
+      <vocabulary-key>
+         <algorithm xml:id="xslt2">
+            <IRI>tag:textalign.net,2015:stylesheet:convert-tan2018-to-tan2020</IRI>
+            <name>Converter from TAN 2018 to TAN 2020</name>
+            <location href="../../../TAN-2020/applications/convert/convert%20TAN%202018%20to%20TAN%202020.xsl" accessed-when="2020-03-09T04:18:50.261-04:00"/>
+         </algorithm>
+      
+         <algorithm xml:id="xslt1"><IRI>tag:textalign.net,2015:stylesheet:convert-tan2017-to-tan2018</IRI><name>Stylesheet to populate a TAN-A-div file from collections.</name><desc>Stylesheet at: ../../../TAN-2018/do%20things/convert/convert%20TAN%202017%20to%20TAN%202018.xsl</desc>
+            <location href="../../../TAN-2020/applications/convert/convert%20TAN%202017%20to%20TAN%202018.xsl" accessed-when="2020-03-09"/></algorithm>
+      </vocabulary-key>
+      
+      <file-resp who="kalvesmaki"/>
+      <resp roles="editor" who="kalvesmaki"/>
+      <resp roles="stylesheet" who="xslt1 xslt2"/>
+      <change when="2016-05-26" who="kalvesmaki">Started file</change>
+      <change who="xslt1" when="2017-12-19T18:08:41.93-05:00">TAN file updated to 2018 schemas.</change>
+      <change who="xslt2" when="2020-03-09T04:18:50.261-04:00">Converted from 2018 to 2020 schemas.</change>
+      <to-do>
+         <comment who="xslt1" when="2017-12-19T18:08:41.93-05:00">File is still in progress.</comment>
+      </to-do>
+   </head>
+   <body claimant="xslt2"/>
+</TAN-A>
